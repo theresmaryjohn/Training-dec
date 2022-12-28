@@ -1,0 +1,21 @@
+body {
+    border-top: 5px solid aqua;
+    margin-top:12px ;
+    border-right: 5px solid aqua;
+    margin-right: 12px;
+    border-left: 5px solid black;
+    margin-left: 12px;
+    border-bottom: 5px solid black;
+
+}
+/*changing inline element to block*/
+a{
+    display: block;
+} 
+/*box model property in css*/
+p , a{
+    width: 50%;
+    margin: 20px;
+    padding: 30px;
+    border: 2px solid black;
+}

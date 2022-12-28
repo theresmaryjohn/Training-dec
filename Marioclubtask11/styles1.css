@@ -25,7 +25,7 @@ header h1{
     position:relative;
 }
 .banner img {
-    max-width: 100%;
+    width:100%;
 }
 .banner .welcome{
     background-color: orange;
@@ -67,6 +67,7 @@ nav li a{
 }
 nav li a.join{
     color: red;
+    padding: 2px;
 }
 main{
     max-width: 100%;
@@ -120,3 +121,54 @@ footer{
     padding: 10px ;
     text-align: center;
 }
+/* responsive styles using media queries*/
+@media  screen and  (max-width:1400px){
+    .banner .welcome h2{
+        font-size: 60px;
+    }
+    nav li {
+        font-size: 18px;
+    }
+}
+@media screen  and (max-width:960px){
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:700px){
+    .banner .welcome{
+        position:relative;
+        text-align: centre;
+        padding: 10px;
+    }
+    .banner .welcome br{
+        display:none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+@media screen and (max-width:560px){
+    nav li{
+        font-size: 20px;
+        display:block;
+        width: 100%;
+        margin:12px 0;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top:0;
+    
+    }
+}
+    

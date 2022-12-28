@@ -1,0 +1,94 @@
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    padding:20px;
+}
+/*img{
+    float: left;
+    margin: 10px;
+}*/
+.wrapper:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.service:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.service h2, .service p{
+    color: #999;
+margin: 10px 0;
+text-align: center;
+color: black;
+}
+.service{
+    float:left;
+    background:#eee;
+    width: 29.33%;
+    padding: 1%;
+    margin: 1%;
+    height: 140px;
+    position: relative;
+}
+.service:nth-child(1){
+    top: 1px;
+}
+.service:nth-child(2){
+    top: 50px;
+}
+.service:nth-child(3){
+    top: 30px;
+}
+.content {
+    padding: 10px;
+    background: #ccc;
+    clear: left;
+   margin-top: 200px;/*to add margin between floted attributes we need to clear */
+   position: relative;
+   left:50px;
+   top:50px
+}
+.content p{
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-rule: 2px solid red;
+    column-rule: 2px solid red;
+    text-align: justify;
+}
+#banner{
+    max-height:300px;
+    overflow: hidden;
+    margin: 1%;
+    position: relative;
+}
+#banner h2{
+    position: absolute;
+    top: 30px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+nav {
+    background:#333;
+    color: white;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+ li{
+        float: right;
+        margin: 8px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    nav ul::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
