@@ -1,0 +1,54 @@
+header{
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+header::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.basket ul{
+    padding: 0;
+    margin-top: 40px;
+}
+.basket li{
+    display: inline-block;
+    list-style-type: none;
+    width: 30%;
+    margin: 30px 1.5%;
+    text-align: center;
+
+}
+.basket button{
+    border-radius: 10px;
+    cursor:pointer;
+    padding: 9px;
+    color: #eee;
+    background: black;
+}
+.basket header div{
+    float: right;
+    position: relative;
+    z-index: 1;
+}
+.basket header h1{
+float: left;
+}
+/*Animation Styles*/
+
+.zoom{
+    position: absolute;
+    top: 40px;
+    right: 50%;
+    width: 40px;
+    opacity: 0;/*if we remove this we can see tshirt at top on clicking*/
+    animation: zoom 1s forwards;
+}
+@keyframes zoom{
+    0%{opacity: 0 }
+    50%{opacity: 1}
+    100%{opacity: 1; right: 40px}
+}
