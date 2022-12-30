@@ -1,0 +1,55 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* menu base styles */
+nav{
+    background: #333;
+
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    padding:10px;
+    
+}
+/*social menu base styles*/
+
+
+
+
+/* flex styles */
+@media screen and (min-width:768px) {
+
+  nav ul{
+    display:flex;
+    /*justify-content:space-around;(by using this command space around each flux item is same)
+    justify-content: flex-start;*/
+   } 
+   nav li{
+    flex:1 1 0;
+   }
+   nav{
+    display: flex;
+    justify-content: space-between;
+
+   }
+   
+}
