@@ -47,7 +47,7 @@ h1{
 animation: twirl 0.2s ease-in forwards;
 }
 .panels li:hover div.back{
-    animation:back 0.2s ease-in forwards ;
+    animation:back 0.2s 0.2s/*delay*/ ease-in forwards ;
 }
 @keyframes twirl{
     0%{transform: rotateY(0deg)}

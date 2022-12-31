@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>12 Column</title>
+    <style>
+        body{
+            color: #fff;
+            font-family: 'Nunito Semibold';
+            text-align: center;
+        }#contents{
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px,auto);
+            max-width: 960px;
+            margin: 0 auto;
+            grid-gap:10px;
+            grid-template-areas: 
+            "header header header header"
+            "footer footer footer footer"
+            "nav nav main main"
+            "section section section section"
+            "aside aside aside aside"
+            "aside aside aside aside ";
+
+        }
+        @media screen and (min-width:760px){
+
+    
+        #contents{
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px,auto);
+            max-width: 960px;
+            margin: 0 auto;
+            grid-gap:10px;
+            grid-template-areas: 
+            "header header header header"
+            "aside aside  main main"
+            "nav nav main main"
+            "section section section section"
+            "footer footer footer footer";
+
+        }
+    }
+        #contents>*{
+            background: #3bbced;
+            padding: 30px;
+
+        }
+        header{
+            grid-area: header;
+        }
+        main{
+            grid-area: main;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        nav{
+            grid-area: nav;
+        }
+        footer{
+            grid-area: footer;
+        }
+       /* header{
+            grid-column: 1/13;
+        }
+        main{
+            grid-column: 4/13;
+            grid-row: 2/4;
+        }
+        aside{
+            grid-column: 1/4;
+            
+        }
+        section{
+            grid-column: 1/13;
+            grid-row: 4/6;
+        }
+        nav{
+            grid-column: 1/4;
+        }
+        footer{
+            grid-column: 1/13;
+        }*/
+
+    </style>
+</head>
+<body>
+    <div id="contents">
+        <header>Header</header>
+        <main>Main</main>
+        <section>Section</section>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+        <footer>Footer</footer>
+
+    </div>
+</body>
+</html>
