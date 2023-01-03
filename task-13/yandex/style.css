@@ -99,8 +99,9 @@ span{
   color: lightslategray;
   opacity: 0.5;
 }
-li #img {
-    padding-bottom: 25px;
+li#img{
+   position: relative;
+   bottom: 5px;
 }
 .grid{
     text-align: center;
