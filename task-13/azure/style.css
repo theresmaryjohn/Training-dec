@@ -1,0 +1,216 @@
+body,a,strong,li{
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+    
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url("img/SegoeUI-Roman-VF_web.woff2") format("truetype");
+}
+@media screen and (min-width:320px){
+    
+ .header-1{
+    display: none;   
+}
+.header-2{
+    display: none;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: white;
+    box-sizing: border-box;
+    margin-top: 13px;
+    margin-right: 19px;
+    margin-left: 7px;
+    padding: 4px;
+}
+.nav-hamburger{
+   padding: 13px;
+   font-family: 'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif;
+   font-size: 16px;
+   letter-spacing: 1.1px;
+}
+.nav-hamburger img{
+    margin-top: 2px;
+    margin-left: -8px;
+}
+.nav-hamburger strong{
+    color: #333;
+    position: relative;
+    bottom:1px;
+    right: -17px;
+}
+.mic-icon{
+    padding-top: 6px;
+    padding-right: 43px;
+    font-size: 12px;
+    font-family: 'Segoe UI';
+}
+nav.mic-icon img{
+    position: relative;
+    left:7px;
+}
+nav#find img{
+    transform: rotateY(360deg);
+    transform: scale(0.8);
+    padding-top: 28%;
+    margin-left: -55px;
+
+}
+#who a{ 
+    color: black;
+    position: relative;
+    left:-1px;
+    bottom: 30px;
+    font-size: 14px;
+    font-family: 'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif;
+    font-weight: 20;
+    background-color: transparent;
+
+}
+}
+
+@media screen and (min-width:768px) {
+   
+    .header{
+        display: none;
+    }
+
+    .header-1{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: #333;
+ }
+    
+     .mic-list ul{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        left: 58px;
+        top: -58px;
+        gap:1px
+        
+}
+i.fa.fa-angle-down{
+    position: relative;
+    top:2px;
+    right: -4px;
+    font-size: 14px;
+}
+.mic-list img{
+margin: 3px;
+margin-left: 0px;
+margin-top: 4px;
+transform: scale(0.75);
+}
+.mic-list strong{
+    color: #333;
+    font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif ;
+    font-size: 16px;
+    font-stretch:ultra-condensed;
+    letter-spacing: 1.1px;
+    position: relative;
+    bottom: 13px;
+    left: 4px;
+}
+
+
+.mic-list li{
+    padding: 9px;
+}
+.mic-list li a{
+    color: #333;
+    font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif ;
+    font-size: 13px;
+}
+div#who-1{
+    display: flex;
+    position:relative;
+    left: 13px;
+    top: -2px;
+
+}
+div#who-1 nav a{
+    color: #333;
+    font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif ;
+    font-size: 13px;
+}
+div#who-1 nav{
+    padding:13px ;
+}
+div#who-1 nav#button-1 img{
+    position:relative ;
+    left: 8px;
+    top:-4px;
+}
+div#who-1 nav#find-1 img{
+    transform: scale(0.6);
+    position: relative;
+    top: -4px;
+    left: 15px;
+}
+}
+@media screen and (min-width:1080px) {
+    .header-1{
+        display: none;
+    }
+    .header-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mic2 ul{
+     display: flex;
+     flex-wrap: wrap;
+     position: relative;
+     left: 58px;
+     top: -47px;
+     gap:1px
+}
+.mic2 img{
+margin: 3px;
+margin-left: 0px;
+margin-top: 4px;
+transform: scale(0.75);
+}
+.mic2 strong{
+    color: #333;
+    font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif ;
+    font-size: 16px;
+    font-stretch:ultra-condensed;
+    letter-spacing: 1.1px;
+    position: relative;
+    bottom: 13px;
+    left: 9px;
+}
+div.right2 ul{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left:13px;
+    top: 2px;
+    gap: 1px;
+}
+nav.find2 img{
+    transform: scale(0.6);
+    position: absolute;
+    right: 311px;
+}
+.right2 li input{
+    height:41px;
+    width:135px;
+}
+
+
+
+
+
+
+
+}
