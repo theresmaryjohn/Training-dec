@@ -70,14 +70,18 @@ body, a, strong, li{
 nav.mic-icon img{
     position: relative;
     left:7px;
-    transform: scale(1);
+    height: 32px;
+    width: 32px;
 }
 nav#find img{
-    transform: rotateY(360deg);
-    transform: scale(0.8);
+    height:32px;
+    width: 20px;
     padding-top: 28%;
     margin-left: -55px;
 
+}
+nav#find{
+    padding-top: 4px;
 }
 #who a{ 
     color: black;
@@ -146,6 +150,132 @@ max-width: 738px;
    margin-top: 28px;
    line-height: 23.5px;
 }
+.chat{
+    position:fixed;
+    bottom: 0;
+    right: 12px;
+   
+
+}
+.chat button{
+    background-color:#0078d4 ;
+    border: 1px solid #0078d4;
+   border-radius: 3px;
+    width: auto;
+    padding: 11px 18px;
+}
+.chat button a{
+    color: white;
+    padding-left: 5px;
+}
+.section-m{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: none;
+}
+div.h-m p{
+    width: 79%;
+    text-align: center;
+    margin-inline-start: 39px;
+    margin-block-start: 65px;
+    font-size: 20px;
+    font-weight:600 ;
+    font-family: 'Segoe UI';
+}
+div.easy-m1{
+    
+     display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    width: 92%;
+    margin-bottom: 36px;
+    margin-inline-start: 10px;
+    
+
+}
+div.easy-m2{
+    
+    display: flex;
+   align-items: center;
+   background-color: #ffffff;
+   border-radius: 9px;
+   border: 1px solid transparent;
+   box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+   width: 91%;
+   margin-bottom: 36px;
+   margin-inline-start: 10px;
+
+}
+div.easy-m3{
+    
+    display: flex;
+   align-items: center;
+   background-color: #ffffff;
+   border-radius: 9px;
+   border: 1px solid transparent;
+   box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    width: 91%;
+   margin-bottom: 36px;
+   margin-inline-start: 10px;
+
+}
+div.easy-m1 img{
+   width:68px;
+    height: 68px;
+    margin-block-end: 30px;
+    border-radius: 9px;
+}
+div.easy-m2{
+    display: flex;
+    align-items: center;
+}
+div.easy-m2 img{
+    width: 68px;
+    height:70px;
+    
+}
+div.easy-m3{
+    display: flex;
+    align-items: center;
+}
+div.easy-m3 img{
+    width:68px;
+    height: 68px;
+}
+
+
+div.easy-m strong{
+ font-size: 20px;
+ font-family: 'Segoe UI';
+ color: #0062ad;
+ margin-block: 19px;
+ margin-inline-end: 24px;
+ padding-left: 7px;
+ 
+}
+.know-m{
+    text-align: center;
+    font-size: 16px;
+ font-family: 'Segoe UI';
+ letter-spacing: 1px;
+ padding-top: 5px;
+}
+.know-m button{
+    background: none;
+    border: 1px solid #0062ad;
+    color: #0062ad;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    letter-spacing: 1px;
+    border-radius: 4px;
+    width: 70%;
+    height: 43px;
+}
 }
 
 @media screen and (min-width:768px) {
@@ -183,7 +313,8 @@ i.fa.fa-angle-down{
 margin: 3px;
 margin-left: 0px;
 margin-top: 4px;
-transform: scale(0.75);
+height: 25.5px;
+width: 24px;
 }
 .mic-list strong{
     color: #333;
@@ -226,7 +357,8 @@ div#who-1 nav#button-1 img{
     top:-4px;
 }
 div#who-1 nav#find-1 img{
-    transform: scale(0.6);
+   height: 14px;
+   width: 14px;
     position: relative;
     top: -4px;
     left: 15px;
@@ -284,7 +416,35 @@ button.free1{
 }
 }
 @media screen and (min-width:961px){
-    
+    .main1{
+        margin: 0;
+        padding: 0;
+        background: url(img/december-hero-desktop.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 69px;
+    }
+    .main1 h1{
+        text-align: start;
+        width: 46%;
+    }
+    .main1 p{
+        width: 48%;
+    }
+    .main1 button{
+        width: 12%;
+    }
+    button.start1{
+        margin-inline: 12px;
+        padding-inline: 0px;
+    }
+    button.free1{
+        width: 137px;
+        margin-left: 7px;
+    }
 }
 
 @media screen and (min-width:1080px) {
@@ -292,16 +452,19 @@ button.free1{
         display: none;
     }
     .header-2{
-        height:43px;
+        height:55px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        max-width: 1300px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 9px;
+        margin-right: 12px;
         padding: auto;
-        margin-top: 2px;
+        margin-top: 6px;
         
+    }
+    li.free{
+        width:66px;
+        max-width: 1440px;
     }
     .mic2 ul{
      display: flex;
@@ -332,7 +495,8 @@ button.free1{
 margin: 3px;
 margin-left: 0px;
 margin-top: 7px;
-transform: scale(0.75);
+height: 25.5px;
+width: 24px;
 }
 .mic2 strong{
     color: #333;
@@ -382,7 +546,8 @@ i.fa.fa-angle-down{
     display: flex;
     width:fit-content;
     align-items: flex-start;
-    gap: 13px;
+    gap: 10px;
+    margin-right: 15px;
 }
 .right2 ul a{
     color: black;
@@ -407,24 +572,87 @@ div.right2 li:nth-child(5){
     right: 5px;
 
 }
+.main1 h1{
+    width: 47%;
 }
-@media screen and (min-width:1440px){
+li.free{
+    margin-inline-end: -13px;
+}
+.main1 p{
+    width: 47%;
+}
+button.start1{
+    width: 10%;
+}
+}
+@media screen and (min-width:1280px){
     .header-2{
-        margin-top: 5px;
-        margin-left: 12px;
-        max-width: 1300px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: auto;
+        height:49px;
+        margin-top: 4px;
+        margin-left: 13px;
+        margin-right: -4px;
+        max-width:1318px;
+        margin-inline: auto;
+
+    }
+    .mic2 ul{
+        left: 99px;
+    }
+    .mic2 img{
+        margin-left: 7px;
+    }
+    div.text1{
+        max-width: 1318px;
+        margin-inline: auto;
+        margin-block-start: 13px;
+    }
+    button.start1{
+        width: 9%;
+    }
+    .main1 p{
+        width: 47%;
+    }
+    li.free{
+        width: 90px;
+    margin-block: 5px;
+    margin-inline: 2px;
+    display: grid;
+   
+    }
+    li.free strong{
+        margin-left: 7px;
+    }
+    .main1{
+        padding-bottom: 290px;
+        border-top: 1px solid lightgray;
+    }
+}
+
+@media screen and (min-width:1440px){
+    
+    li.free{
+        width: 101px;
+    margin-block: 3px;
+    margin-inline: 2px;
+    display: grid;
+    max-width: 3000px;
+    }
+    li.free strong{
+        margin-left: 0;
+    }
+    li.free a{
+        margin-top: 2px;
     }
     .right2 ul{
         gap:14px;
     }
     div.right2 li:nth-child(5) {
         margin-left: 0px;
-        padding-inline: 14px;
-        padding-block: 7px;
-        padding-block-end: 8px;
+        margin-top: 0;
+        display: flex;
+        padding-block: 8px;
+        width: 88px;
+        justify-content: center;
         position: relative;
         top: -9px;
         right: -1p
@@ -433,6 +661,10 @@ div.right2 li:nth-child(5){
 .right2 ul a{
     font-size: 12px;
 }
+.main p{
+    width: 47%;
+}
+
 
 }
 
