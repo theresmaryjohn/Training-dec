@@ -25,6 +25,11 @@ body, a, strong, li{
     font-family: 'Segoe UI';
     src: url("img/SegoeUI-Roman-VF_web.woff2") format("truetype");
 }
+.tab-img:hover{
+    cursor: pointer;
+  transform: translateX(-50px);
+  transition: all .8s ease-in-out;
+}
 
 @media screen and (min-width:320px){
     
@@ -661,21 +666,267 @@ div.know-tab{
 .head-nhs h2{
     font-size: 20px;
     font-family: 'Segoe UI';
-    text-align: center;
-    padding-top: 46px;
-    width: 95%;
+    padding-top: 43px;
     padding-left: 11px;
+    line-height: 1.2;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    color: #1a1a1f;
 }
 .logo-mob{
     display: flex;
     justify-content: center;
-}
-.image-mob img{
-    height: 241.39px;
-    width: 320px;
-}
+    padding-inline-end: 5px;
 }
 
+.image-mob img{
+    width: 100%;
+    padding-block-start: 7px;
+
+}
+.image-mob p{
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    margin: 0 2px 32px 0;
+    color: #333;
+}
+.ref-mob a{
+    font-size: 14px;
+    color: #0062ad;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+}
+.about-mob{
+    padding:24px;
+    background-color: #f8f9fa;
+}
+.dot-mob{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 104px;
+    
+}
+.dot-mob .dot{
+    background-color: black;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+    display: inline-block;
+    
+}
+.dot-mob .dot:nth-child(1){
+    background-color: #0062ad;
+    margin-inline: 20px;    
+}
+.dot-mob .dot:nth-child(2){
+    margin-inline: 20px;
+}
+.dot-mob .dot:nth-child(3){
+    margin-inline: 20px;
+}
+.dot-mob .dot:nth-child(4){
+    margin-inline: 20px;
+}
+.dot-mob .dot:nth-child(5){
+    margin-inline: 20px;
+}
+.dot-mob .dot:nth-child(6){
+    margin-inline: 20px;
+}
+.nhs-tab{
+    display: none;
+}
+.acce-mob{
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI';
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center
+}
+.acce-mob-img img{
+    width: 70%;
+    margin-inline-start: 40px;
+}
+.acce-text-mob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+}
+.acce-text-mob h2{
+    font-size: 36px;
+    text-align: center;
+    width: 72%;
+    line-height: 1.2;
+}
+.acce-text-mob button{
+    background-color: transparent;
+    color: #0062ad;
+    font-weight: 600;
+    border: 1px solid #0078d4;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    padding: 10px 22px;
+    border-radius: 6px;
+
+}
+.discover-mob{
+    padding: 84px 0;
+}
+.text-discover-mob{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+}
+.discover-text-mob{
+    padding:12px;
+}
+.feat-discover-mob{
+    display: grid;
+    grid-template-columns: 75vw 75vw 75vw 75vw 75vw 75vw;
+    column-gap: 40px;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    margin-top: 8%;
+    padding: 20px;
+}
+.feat-discover-mob img{
+    width: 100%;
+    height: 100%;
+    border-radius:9px 9px 0 0 ;
+}
+.feat-discover-mob1{
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    background-color: white;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    width: 291.75px;
+}
+.feat-discover-mob1 b{
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    color: #4c4c51;
+}
+.feat-discover-mob1 p{
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    line-height: 1.4;
+    color: #333;
+}
+
+
+}
+@media screen and (min-width:570px){
+    .nhs-mobile{
+        display: none;
+    }
+    .nhs-tab {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .head-nhs-tab h2{
+        font-size: 20px;
+    font-family: 'Segoe UI';
+    padding-top: 43px;
+    padding-left: 11px;
+    line-height: 1.2;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    color: #1a1a1f;
+    }
+    .about-tab{
+        padding:24px;
+    background-color: #f8f9fa;
+    }
+    .ref-tab a{
+        font-size: 14px;
+        color: #0062ad;
+        font-family: 'Segoe UI';
+        font-weight: 600;
+    }
+    .image-tab p{
+        font-size: 20px;
+        font-family: 'Segoe UI';
+        margin: 0 12px 12px 0;
+    }
+    
+
+    .logo-tab{
+        display: none;
+    }
+    .head-nhs-tab h2{
+        font-size: 20px;
+        font-family: 'Segoe UI';
+    }
+    .about-tab p{
+        font-size: 20px;
+        font-family: 'Segoe UI';
+    }
+    .about-tab a{
+        font-size: 14px;
+        font-family: 'Segoe UI';
+    }
+    .image-tab img{
+        width: 100%;
+    }
+    .dot-tab{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 101px;
+        padding-top: 10px;
+    }
+    .dot-tab .dot{
+        background-color: black;
+        border-radius: 50%;
+        height: 7px;
+        width: 7px;
+        display: inline-block;
+        
+    }
+    .dot-tab .dot:nth-child(1){
+        background-color: #0062ad;
+        margin-inline: 20px;    
+    }
+    .dot-tab .dot:nth-child(2){
+        margin-inline: 20px;
+    }
+    .dot-tab .dot:nth-child(3){
+        margin-inline: 20px;
+    }
+    .dot-tab .dot:nth-child(4){
+        margin-inline: 20px;
+    }
+    .dot-tab .dot:nth-child(5){
+        margin-inline: 20px;
+    }
+    .dot-tab .dot:nth-child(6){
+        margin-inline: 20px;
+    }
+    .acce-text-mob{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding-top: 0;
+        padding-inline-start: 52px;
+    }
+    .acce-text-mob h2{
+        text-align: left;
+        width: 87%;
+    }
+    .acce-mob-img img{
+        width: 80%;
+    }
+    
+}
 @media screen and (min-width:768px) {
    
     .header{
@@ -1202,9 +1453,79 @@ div.know-tab{
 .tab-img{
     display:none;
 }
+.nhs-tab{
+    display: flex;
+}
+.head-nhs-tab h2{
+    font-size: 24px;
+    font-family: 'Segoe UI';
+}
+.about-tab p{
+    font-size: 20px;
+    font-family: 'Segoe UI';
+}
+.about-tab a{
+    font-size: 14px;
+    font-family: 'Segoe UI';
+}
+.acce-mobile{
+    display: flex;
+    flex-direction: row;
+}
+.acce-mob-img img{
+    width: 116%;
+}
+.acce-text-mob{
+    padding-inline-start: 100px;
+}
+.feat-discover-mob{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 24px;
+    overflow: auto;
+}
+.feat-discover-mob1:nth-child(3) img{
+    display: none;
+}
+.feat-discover-mob1:nth-child(3) {
+   background: url(img/win-server-sql3.webp);
+   background-size: cover;
+   max-width:623px ;
+}
+.feat-discover-mob1:nth-child(3) p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    width: 72%;
+    padding-top: 59px;
+}
+.feat-discover-mob1:nth-child(3) b{
+    display: none;
+}
+.feat-discover-mob1:nth-child(5) img{
+    display: none;
+}
+.feat-discover-mob1:nth-child(5) {
+   background: url(img/azure-regions-1250w.webp);
+   background-size: cover;
+   max-width: 623px;
 
 }
+.feat-discover-mob1:nth-child(5) p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    width: 72%;
+    padding-top: 59px;
+}
+.feat-discover-mob1:nth-child(5) b{
+    display: none;
+}
 
+
+}
 @media screen and (min-width:769px){
     div.img-tab3 img{
         height: auto;
@@ -1244,6 +1565,11 @@ button.free1{
     padding: 12px;
     margin-left: 25px;
 }
+.about-tab p{
+    max-width: 100%;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+}
 
 }
 @media screen and (min-width:960px){
@@ -1262,9 +1588,19 @@ button.free1{
         border: 20px solid black;
         border-radius: 12px;
     }
+    
+    
 .features-tab{
     width: 56%;
     padding-right: 33px;
+}
+i.fa.fa-long-arrow-left{
+    color: #0062ad;
+    font-size: 14px;
+}
+i.fa-long-arrow-left b{
+    font-size: 14px;
+    font-family: 'Segoe UI';
 }
 
 .feat-tab{
@@ -1276,9 +1612,72 @@ button.free1{
     max-width: 1318px;
     margin-inline: auto;
 }
-
-
+.dot-tab{
+    display: none;
 }
+.head-nhs-tab h2{
+    font-size: 24px;
+}
+.logo-tab{
+    display:flex;
+    justify-content: center;
+}
+.logo-tab img{
+    padding: 23px;
+}
+.logo-tab .logo-t1{
+    border-bottom: 3px solid #0062ad;
+}
+.logo-tab .logo-t2{
+    filter: grayscale(100%);
+}
+.logo-tab .logo-t3{
+    filter: grayscale(100%);
+}
+.logo-tab .logo-t4{
+    filter: grayscale(100%);
+}
+.logo-tab .logo-t5{
+    filter: grayscale(100%);
+}
+.logo-tab .logo-t6{
+    filter: grayscale(100%);
+}
+.about-tab{
+    background-color: #1a1a1f;
+    color: #ffffff;
+    width:573px;
+    height: 202px;
+   position: relative;
+    border-radius: 10px;
+    bottom: 262px;
+    margin-inline-start: 16px;
+   
+}
+.about-tab p{
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    margin-bottom: 21px;
+    margin-top: 0;
+    max-width: 625px;
+}
+.about-tab a{
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    text-decoration: underline;
+}
+.ref-tab a{
+    color: #ffffff;
+}
+.image-tab img{
+    width: 100%;
+}
+.logo-mob{
+    display: none;
+}
+}
+
+
 @media screen and (min-width:961px){
     .main1{
         margin: 0;
@@ -1503,6 +1902,7 @@ button.start1{
         padding-bottom: 290px;
         border-top: 1px solid lightgray;
     }
+    
 }
 
 @media screen and (min-width:1440px){
@@ -1532,7 +1932,7 @@ button.start1{
         justify-content: center;
         position: relative;
         top: -9px;
-        right: -1p
+        right: -1px
 
 }
 .right2 ul a{
@@ -1546,6 +1946,27 @@ button.start1{
     max-width: 1318px;
     margin-inline: auto;
 }
+.about-tab{
+    max-width: 1924px;
+    margin-right: auto;
+    margin-left: 262px;
+}
+.image-tab{
+    min-width: 1924px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nhs-tab{
+    margin-block-end: -80px;
+}
+.acce-mobile{
+    max-width: 1418px;
+    margin-inline: auto;
+}
+.feat-discover-mob{
+    max-width: 1318px;
+    margin-inline: auto;
+} 
 
 }
 
