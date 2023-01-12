@@ -1064,6 +1064,7 @@ i.fa.fa-plus{
     font-size: 12px;
     font-family: 'Segoe UI';
     color: #1a1a1f;
+    margin-bottom: 0;
 }
 .place-mob input{
     width: 180px;
@@ -1074,12 +1075,20 @@ i.fa.fa-plus{
 .place-mob i{
     margin-inline: -25px;
 }
-
+.lists-mob-footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 91%;
+    flex-wrap: wrap
+}
 
 .lists-mob-footer li{
     font-size: 12px;
     font-family: 'Segoe UI';
     color: #1a1a1f;
+    margin: 0 0 12px 16px;
+    padding: 2px 0;
 }
 
 }
