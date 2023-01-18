@@ -1,12 +1,15 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+body{
+    overflow-x: hidden;
+}
 body, a, strong, li{
     list-style-type: none;
     text-decoration: none;
     margin:0;
     padding: 0;
-    
-}
-*{
-    box-sizing: border-box;
 }
 
 @font-face {
@@ -30,13 +33,48 @@ body, a, strong, li{
   transform: translateX(-50px);
   transition: all .8s ease-in-out;
 }
+.microsoft-icon-tab li a:hover{
+    text-decoration: underline;
+}
+.easy-tab-one:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+.easy-tab-two:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+.easy-tab-three:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+.feat-tab-find:hover{
+    box-shadow: 0px 10px 20px 5px rgba(138, 129, 129, 0.5);
+    transform: translateY(-5px);
+}
+.logo-tab .logo-t2:hover{
+    filter: grayscale(0%);
+}
+.logo-tab .logo-t3:hover{
+    filter: grayscale(0%);
+}
+.logo-tab .logo-t4:hover{
+    filter:grayscale(0%);
+}
+.logo-tab .logo-t5:hover{
+    filter: grayscale(0%);
+}
+.logo-tab .logo-t6:hover{
+    filter:grayscale(0%);
+}
+
 
 @media screen and (min-width:320px){
     
- .header-1{
+ .header-first{
     display: none;   
 }
-.header-2{
+.header-second{
     display: none;
 }
 .header{
@@ -52,7 +90,7 @@ body, a, strong, li{
 }
 .nav-hamburger{
    padding: 13px;
-   font-family: 'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif;
+   font-family: 'Segoe UI';
    font-size: 16px;
    letter-spacing: 1.1px;
 }
@@ -70,13 +108,13 @@ body, a, strong, li{
     font-size: 18px;
     letter-spacing: 0px;
 }
-.mic-icon{
+.microsoft-icon{
     padding-top: 6px;
     padding-right: 43px;
     font-size: 12px;
     font-family: 'Segoe UI';
 }
-nav.mic-icon img{
+nav.microsoft-icon img{
     position: relative;
     left:6px;
     height: 32px;
@@ -98,7 +136,7 @@ nav#find{
     left:-1px;
     bottom: 29px;
     font-size: 14px;
-    font-family: 'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif;
+    font-family: 'Segoe UI';
     font-weight: 20px;
     background-color: transparent;
  }
@@ -107,7 +145,7 @@ nav#find{
     margin: 0;
     overflow: hidden;
  }
- .main1{
+ .mainpart{
     margin: 0;
     padding: 0;
     background: url(img/december-hero-mobile.png);
@@ -119,7 +157,7 @@ nav#find{
     padding-bottom: 69px;
    
  }
- .main1 button{
+ .mainpart button{
     text-align: center;
     display: inline;
     border-radius: 7px;
@@ -129,34 +167,34 @@ nav#find{
     margin-block-start: 20px;
     overflow: hidden;
 }
-.main1 button a{
+.mainpart button a{
     color: white;
     padding-inline: 22px;
 }
-button.start1{
+button.get-started{
     width: 77%;
 }
-button.free1{
+button.try-for-free{
     width: 77%;
 }
-.main1 h1{
+.mainpart h1{
     margin: 0;
     padding: 0;
 font-size: 54px;
 letter-spacing:normal;
 line-height: 1.1;
-font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif;
+font-family:'Segoe UI';
 text-align: center;
 padding-top: 59px;
 color: #1a1a1f;
 max-width: 738px;
 }
- .main1 p{
+ .mainpart p{
     margin: 0;
     padding: 0;
     text-align: center;
     font-size: 18px;
-    font-family: 'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif;
+    font-family: 'Segoe UI';
    color: rgb(83, 76, 76);
    margin: 18px;
    margin-top: 28px;
@@ -166,6 +204,7 @@ max-width: 738px;
     position:fixed;
     bottom: 0;
     right: 12px;
+    z-index: 100;
    
 
 }
@@ -198,7 +237,7 @@ div.h-m p{
     line-height: 1.2;
     padding-bottom: 11px;
 }
-div.easy-m1{
+div.easy-m-one{
     
      display: flex;
     align-items: center;
@@ -212,7 +251,7 @@ div.easy-m1{
     
 
 }
-div.easy-m2{
+div.easy-m-two, div.easy-m-three{
     
     display: flex;
    align-items: center;
@@ -227,41 +266,27 @@ div.easy-m2{
     padding-top: 4px;
 
 }
-div.easy-m3{
-    
-    display: flex;
-   align-items: center;
-   background-color: #ffffff;
-   border-radius: 2px;
-   border: 1px solid transparent;
-   box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    width: 92%;
-   margin-bottom: 26px;
-   margin-inline-start: 15px;
-   padding-bottom: 8px;
-    padding-top: 4px;
 
-}
-div.easy-m1 img{
+div.easy-m-one img{
    width:68px;
     height: 68px;
     margin-block-end: 30px;
     border-radius: 2px;
 }
-div.easy-m2{
+div.easy-m-two{
     display: flex;
     align-items: center;
 }
-div.easy-m2 img{
+div.easy-m-two img{
     width: 68px;
     height:70px;
     
 }
-div.easy-m3{
+div.easy-m-three{
     display: flex;
     align-items: center;
 }
-div.easy-m3 img{
+div.easy-m-three img{
     width:68px;
     height: 68px;
 }
@@ -351,7 +376,7 @@ div.know-tab{
     margin-inline: 15px;
     margin-block: 26px;
 }
-.feat-m1{
+.feat-mob-box{
     align-items: center;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     background-color: white;
@@ -363,11 +388,11 @@ div.know-tab{
     padding: 24px;
     margin-block: -2px;
 }
-.feat-m1 img{
+.feat-mob-box img{
     height:36px;
     width:36px;
 }
-.feat-m1 p{
+.feat-mob-box p{
     margin: 12px 0;
     font-size: 14px;
     font-family: 'Segoe UI';
@@ -375,163 +400,7 @@ div.know-tab{
     margin: 8px 0;
     line-height: 1.5;
 }
-.feat-m1 a{
-    color: #0062ad;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-.feat-m2{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 24px;
-    margin-block: -2px;
-
-}
-.feat-m2 img{
-    height:36px;
-    width:36px;
-}
-.feat-m2 p{
-    margin: 8px 0;
-    line-height: 1.5;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    color: #333;
-    
-}
-.feat-m2 a{
-    color: #0062ad;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-.feat-m3{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 24px;
-    margin-block: -2px;
-
-}
-.feat-m3 img{
-    height:36px;
-    width:36px;
-}
-.feat-m3 p{
-    margin: 12px 0;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    color: #333;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.feat-m3 a{
-    color: #0062ad;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-.feat-m4{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    border: 1px solid transparent;
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 24px;
-    margin-block: -2px;
-
-}
-.feat-m4 img{
-    height:36px;
-    width:36px;
-}
-.feat-m4 p{
-    margin: 12px 0;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    color: #333;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.feat-m4 a{
-    color: #0062ad;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-.feat-m5{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 24px;
-    margin-block: -2px;
-
-}
-.feat-m5 img{
-    height:36px;
-    width:36px;
-}
-.feat-m5 p{
-    margin: 12px 0;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    color: #333;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.feat-m5 a{
-    color: #0062ad;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-.feat-m6{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 24px;
-    margin-block: -2px;
-
-}
-.feat-m6 img{
-    height:36px;
-    width:36px;
-}
-.feat-m6 p{
-    margin: 12px 0;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    color: #333;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.feat-m6 a{
+.feat-mob-box a{
     color: #0062ad;
     font-size: 14px;
     font-family: 'Segoe UI';
@@ -544,7 +413,7 @@ div.know-tab{
     margin-block-start: -11px;
     width: 95%;
 }
-.features-m1{
+.features-mob-find{
     align-items: center;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     background-color: white;
@@ -553,70 +422,7 @@ div.know-tab{
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    width: 100%;
-   padding: 7px 24px 7px 12px;
-   font-weight: 600;
-   font-family: 'Segoe UI';
-   font-size: 16px;
-   margin-block-end: 13px;
-}
-.features-m2{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-   padding: 7px 24px 7px 12px;
-   font-weight: 600;
-   font-family: 'Segoe UI';
-   font-size: 16px;
-   margin-block-end: 13px;
-}
-.features-m3{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-   padding: 7px 24px 7px 12px;
-   font-weight: 600;
-   font-family: 'Segoe UI';
-   font-size: 16px;
-   margin-block-end: 13px;
-}
-.features-m4{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-   padding: 7px 24px 7px 12px;
-   font-weight: 600;
-   font-family: 'Segoe UI';
-   font-size: 16px;
-   margin-block-end: 13px;
-}
-.features-m5{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    width: 101%;
    padding: 7px 24px 7px 12px;
    font-weight: 600;
    font-family: 'Segoe UI';
@@ -1066,6 +872,9 @@ i.fa.fa-plus{
     color: #1a1a1f;
     margin-bottom: 0;
 }
+.place-mob{
+    margin-inline-start: 21px;
+}
 .place-mob input{
     width: 180px;
     padding: 9px 16px;
@@ -1089,6 +898,9 @@ i.fa.fa-plus{
     color: #1a1a1f;
     margin: 0 0 12px 16px;
     padding: 2px 0;
+}
+.know-more-details{
+    display: none;
 }
 
 }
@@ -1205,7 +1017,7 @@ i.fa.fa-plus{
         display: none;
     }
 
-    .header-1{
+    .header-first{
         height: 46px;
         display:flex;
         justify-content: space-between;
@@ -1215,13 +1027,13 @@ i.fa.fa-plus{
         margin-left: 10px;
  }
     
-     .mic-list ul{
+     .microsoft-list ul{
         display: flex;
         flex-wrap: wrap;
         position: relative;
         left: 58px;
         top: -58px;
-        gap:1px
+        gap:1px;
         
 }
 i.fa.fa-angle-down{
@@ -1230,74 +1042,77 @@ i.fa.fa-angle-down{
     right: -4px;
     font-size: 14px;
 }
-.mic-list img{
+.microsoft-list img{
 margin: 3px;
 margin-left: 0px;
 margin-top: 4px;
 height: 25.5px;
 width: 24px;
 }
-.mic-list strong{
+.microsoft-list strong{
     color: #333;
-    font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif ;
+    font-family:'Segoe UI';
     font-size: 16px;
     font-stretch:ultra-condensed;
     letter-spacing: 1.1px;
     position: relative;
-    bottom: 13px;
+    bottom: 10px;
     left: 4px;
 }
+.microsoft-icon-tab{
+    padding: 10px;
+}
 
 
-.mic-list li{
+.microsoft-list li{
     padding: 9px;
 }
-.mic-list li a{
+.microsoft-list li a{
     color: #333;
-    font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif ;
+    font-family:'Segoe UI';
     font-size: 13px;
 }
-div#who-1{
+div#Sign-in{
     display: flex;
     position:relative;
     left: 6px;
     top: -4px;
 
 }
-div#who-1 nav a{
+div#Sign-in nav a{
     color: #333;
-    font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif ;
+    font-family:'Segoe UI';
     font-size: 13px;
 }
-div#who-1 nav{
+div#Sign-in nav{
     padding:13px ;
 }
-div#who-1 nav#button-1 img{
+div#Sign-in nav#threedots img{
     position:relative ;
     left: 8px;
     top:-4px;
 }
-div#who-1 nav#find-1 img{
+div#Sign-in nav#Search-find img{
    height: 16px;
    width: 16px;
     position: relative;
     top: 0px;
     left: 10px;
 }
-.main1{
+.mainpart{
     width: 101%;
     padding-bottom: 58px;
 }
-.main1 button{
+.mainpart button{
     margin-inline-start: 63px;
     margin-block-start: 27px;
     width: 83%;
     margin-block-end: -9px;
 }
-.main1 h1{
+.mainpart h1{
     margin-left: 16px;
 }
-.main1 p{
+.mainpart p{
     margin-top: 13px;
     margin-left: 8px;
 }
@@ -1325,7 +1140,7 @@ div.easy-tab{
     max-width:1318px;
     margin-inline: auto;
 }
-div.easy-tab1{
+div.easy-tab-one{
     grid-row: 1/span2;
     background: url(img/desktop1icon.jpg);
     background-size: cover;
@@ -1340,7 +1155,7 @@ flex-direction: column-reverse;
 width:100%;
 
 }
-div.easy-tab1 p{
+div.easy-tab-one p{
     margin-inline-start: 24px;  
     font-size: 16px;
     line-height: 1.4;
@@ -1348,7 +1163,7 @@ div.easy-tab1 p{
     color: #333;
     
 }
-div.easy-tab1 strong{
+div.easy-tab-one strong{
     font-size: 24px;
     font-family: 'Segoe UI';
     color:#0062ad ;
@@ -1356,7 +1171,7 @@ div.easy-tab1 strong{
 }
 
 
-div.easy-tab2{
+div.easy-tab-two{
     border-radius: 2px;
    border: 1px solid transparent;
    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
@@ -1367,21 +1182,21 @@ flex-direction: row;
    overflow: hidden;
    width: 88%;
 }
-div.img-tab2 img{
+div.img-tab-two img{
    width: 119px;
    height: 270px;
    object-fit: cover;
 }
-div.easy-tab2 p{
+div.easy-tab-two p{
     font-size: 16px;
     line-height: 1.4;
     font-family: 'Segoe UI';
     color: #333;
 }
-div.para-tab2{
+div.para-tab-two{
     padding-left: 38px;
 }
-div.easy-tab2 strong{
+div.easy-tab-two strong{
     font-size: 20px;
     font-family: 'Segoe UI';
     color:#0062ad ;
@@ -1390,7 +1205,7 @@ div.easy-tab2 strong{
     
 }
 
-div.easy-tab3{
+div.easy-tab-three{
     border-radius: 2px;
    border: 1px solid transparent;
    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
@@ -1401,21 +1216,21 @@ flex-direction: row;
    overflow: hidden;
    width: 88%;
 }
-div.img-tab3 img{
+div.img-tab-three img{
    width: 119px;
    height: 318px;
    object-fit: cover;
 }
-div.easy-tab3 p{
+div.easy-tab-three p{
     font-size: 16px;
     line-height: 1.4;
     font-family: 'Segoe UI';
     color: #333;
 }
-div.para-tab3{
+div.para-tab-three{
     padding-left: 44px;
 }
-div.easy-tab3 strong{
+div.easy-tab-three strong{
     font-size: 20px;
     font-family: 'Segoe UI';
     color:#0062ad ;
@@ -1476,7 +1291,7 @@ div.know-tab{
     height: 32px;
     width: 32px;
 }
-.feat-tab1{
+.feat-tab-find{
     align-items: center;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     background-color: white;
@@ -1491,7 +1306,7 @@ div.know-tab{
     
 }
 
-.feat-tab1 p{
+.feat-tab-find p{
     margin: 12px 0;
     font-size: 16px;
     font-family: 'Segoe UI';
@@ -1500,157 +1315,7 @@ div.know-tab{
     line-height: 1.5;
 
 }
-.feat-tab1 a{
-    color: #0062ad;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-.feat-tab2{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 9px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 29px 9px 29px 9px;
-  
-    width: 110%;
-    
-}
-
-.feat-tab2 p{
-    margin: 12px 0;
-    font-size: 16px;
-    font-family: 'Segoe UI';
-    color: #333;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.feat-tab2 a{
-    color: #0062ad;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-
-.feat-tab3{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 9px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 29px 9px 29px 9px;
-    
-    width: 110%;
-    
-}
-
-.feat-tab3 p{
-    margin: 12px 0;
-    font-size: 16px;
-    font-family: 'Segoe UI';
-    color: #333;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.feat-tab3 a{
-    color: #0062ad;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-
-.feat-tab4{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 9px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 29px 9px 29px 9px;
-   
-    width: 110%;
-    
-}
-
-.feat-tab4 p{
-    margin: 12px 0;
-    font-size: 16px;
-    font-family: 'Segoe UI';
-    color: #333;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.feat-tab4 a{
-    color: #0062ad;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-
-.feat-tab5{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 9px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 29px 9px 29px 9px;
-   
-    width: 110%;
-   
-}
-
-.feat-tab5 p{
-    margin: 12px 0;
-    font-size: 16px;
-    font-family: 'Segoe UI';
-    color: #333;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.feat-tab5 a{
-    color: #0062ad;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-
-.feat-tab6{
-    align-items: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    background-color: white;
-    border-radius: 9px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 29px 9px 29px 9px;
-    
-    width: 110%;
-    
-    
-}
-
-.feat-tab6 p{
-    margin: 12px 0;
-    font-size: 16px;
-    font-family: 'Segoe UI';
-    color: #333;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.feat-tab6 a{
+.feat-tab-find a{
     color: #0062ad;
     font-size: 14px;
     font-family: 'Segoe UI';
@@ -1668,31 +1333,17 @@ div.know-tab{
    
   
 }
-.features-tab1 p{
+.features-tab-one p{
     font-weight: 600;
     border-left: 3px solid #0062ad;
    padding-block: 3px;
     padding-left: 7px;
 
 }
-.features-tab2{
+.features-tab-all{
     padding: 3px;
 }
-.features-tab3{
-    padding: 3px;
-}
-.features-tab4{
-    padding: 3px;
-}
-.features-tab5{
-    padding: 3px;
-}
-.features-tab6{
-    padding: 3px;
-}
-.features-tab7{
-    padding: 3px;
-}
+
 
 .features-tab p{
     font-size: 16px;
@@ -1832,46 +1483,55 @@ div.know-tab{
     flex-direction: column;
     align-items: flex-start;
 }
+.azure-icon{
+    display:flex;
+}
+.icon-text-mob{
+    width: 35%;
+}
+.place-mob input{
+    margin: 10px 0;
+}
 }
 
 
 
 @media screen and (min-width:769px){
-    div.img-tab3 img{
+    div.img-tab-three img{
         height: auto;
     }
-    div.img-tab2 img{
+    div.img-tab-two img{
         height: auto;
     }
-    .main1{
+    .mainpart{
         background-position: center;
     }
-   .main1 h1{
+   .mainpart h1{
         text-align: start;
         width:66%;
     }
-    .main1 p{
+    .mainpart p{
         margin-top: 13px;
         margin-left: 14px;
         width: 70%;
         text-align: left;
     }
-.main1 button{
+.mainpart button{
     margin-inline-start: 19px;
     margin-block-start: 26px;
     width: 19%;
     padding: 14px;
 }
-.main1 button a{
+.mainpart button a{
     
     white-space: nowrap;
 }
 
-button.start1{
+button.get-started{
     width: 109px;
     padding-inline: 0px;
 }
-button.free1{
+button.try-for-free{
     padding: 12px;
     margin-left: 25px;
 }
@@ -2134,7 +1794,7 @@ i.fa-long-arrow-left b{
 
 
 @media screen and (min-width:961px){
-    .main1{
+    .mainpart{
         margin: 0;
         padding: 0;
         background: url(img/december-hero-desktop.webp);
@@ -2145,26 +1805,75 @@ i.fa-long-arrow-left b{
     height: fit-content;
     padding-bottom: 69px;
     }
-    .main1 h1{
+    .mainpart h1{
         text-align: start;
         width: 46%;
     }
-    .main1 p{
+    .mainpart p{
         width: 48%;
     }
-    .main1 button{
+    .mainpart button{
         width: 12%;
     }
-    button.start1{
+    button.get-started{
         margin-inline: 12px;
         padding-inline: 0px;
     }
-    button.free1{
+    button.try-for-free{
         width: 137px;
         margin-left: 7px;
     }
     .tab-img{
         width: 25%;
+    }
+}
+@media screen and (min-width:1024px){
+    .know-more-details{
+        display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    font-size: 12px;
+    font-family: 'Segoe UI';
+   
+
+    }
+    .know-more-details li{
+        padding: 7px 0;
+    }
+    .azure-footer-mob{
+        background-color: #f4f5f6;
+        
+    }
+    .azure-icon, .explore-mob, .info-mob{
+        max-width: 1600px;
+        margin-inline: auto;
+    }
+    .icon-text-mob{
+        justify-content: flex-start;
+    }
+    .lists-mob-footer{
+        grid-column: 2/4;
+        width: 98%;
+    }
+    .info-mob{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .place-mob p{
+        margin-top: -7px;
+    }
+    .explore-mob{
+        display: grid;
+        column-gap: 7px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        align-items: flex-start;
+    }
+    .exploremob {
+        background-color:transparent;
+        padding: 0;
+    }
+    .know-more-mob{
+        display: none;
     }
 }
  @media screen and (min-width:1076px){
@@ -2175,13 +1884,14 @@ i.fa-long-arrow-left b{
     .know-tab p{
         margin-block-start: 26px;
     }
+
 } 
 
 @media screen and (min-width:1080px) {
-    .header-1{
+    .header-first{
         display: none;
     }
-    .header-2{
+    .header-second{
         height:55px;
         display: flex;
         flex-direction: row;
@@ -2196,7 +1906,7 @@ i.fa-long-arrow-left b{
         width:66px;
         max-width: 1440px;
     }
-    .mic2 ul{
+    .microsoft-icon-tab ul{
      display: flex;
      flex-wrap: nowrap;
      width: auto;
@@ -2209,26 +1919,26 @@ i.fa-long-arrow-left b{
     
      
 }
-.mic2 li{
+.microsoft-icon-tab li{
     font-size: 12.5px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.mic2 li a{
+.microsoft-icon-tab li a{
     color: black;
     font-weight: 500;
     font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif  ;
     letter-spacing: 0.4px;
 }
-.mic2 img{
+.microsoft-icon-tab img{
 margin: 3px;
 margin-left: 0px;
 margin-top: 7px;
 height: 25.5px;
 width: 24px;
 }
-.mic2 strong{
+.microsoft-icon-tab strong{
     color: #333;
     font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif ;
     font-size: 18px;
@@ -2244,7 +1954,7 @@ i.fa.fa-angle-down{
     font-size: 12px;
 }
 
-.right2 li input{
+.rightside-header li input{
     position: relative;
     top: -10px;
     right: 34px;
@@ -2256,7 +1966,7 @@ i.fa.fa-angle-down{
     border: 1px solid gray;
     width: 119px;
 }
-.right2 div img{
+.rightside-header div img{
     position: absolute;
     right: 43px;
     top:-4px;
@@ -2272,19 +1982,19 @@ i.fa.fa-angle-down{
    left: 12px;
    top: 6px;
 }
-.right2 ul{
+.rightside-header ul{
     display: flex;
     width:fit-content;
     align-items: flex-start;
     gap: 10px;
     margin-right: 15px;
 }
-.right2 ul a{
+.rightside-header ul a{
     color: black;
     font-size: 12.5px;
     font-family:'Segoe UI',Segoe UI,'Helvetica Neue',Helvetica,Arial, sans-serif ;
 }
-div.right2 li:nth-child(5){
+div.rightside-header li:nth-child(5){
     background-color: #89c402;
     text-align: center;
     
@@ -2302,22 +2012,22 @@ div.right2 li:nth-child(5){
     right: 5px;
 
 }
-.main1 h1{
+.mainpart h1{
     width: 47%;
 }
 li.free{
     margin-inline-end: -13px;
 }
-.main1 p{
+.mainpart p{
     width: 47%;
 }
-button.start1{
+button.get-started{
     width: 10%;
 }
 
 }
 @media screen and (min-width:1280px){
-    .header-2{
+    .header-second{
         height:49px;
         margin-top: 4px;
         margin-left: 13px;
@@ -2326,21 +2036,21 @@ button.start1{
         margin-inline: auto;
 
     }
-    .mic2 ul{
+    .microsoft-icon-tab ul{
         left: 99px;
     }
-    .mic2 img{
+    .microsoft-icon-tab img{
         margin-left: 7px;
     }
-    div.text1{
+    div.textarea{
         max-width: 1318px;
         margin-inline: auto;
         margin-block-start: 13px;
     }
-    button.start1{
+    button.get-started{
         width: 9%;
     }
-    .main1 p{
+    .mainpart p{
         width: 47%;
     }
     li.free{
@@ -2353,7 +2063,7 @@ button.start1{
     li.free strong{
         margin-left: 7px;
     }
-    .main1{
+    .mainpart{
         padding-bottom: 290px;
         border-top: 1px solid lightgray;
     }
@@ -2362,6 +2072,7 @@ button.start1{
 }
 
 @media screen and (min-width:1440px){
+
     
     li.free{
         width: 101px;
@@ -2376,10 +2087,10 @@ button.start1{
     li.free a{
         margin-top: 2px;
     }
-    .right2 ul{
+    .rightside-header ul{
         gap:14px;
     }
-    div.right2 li:nth-child(5) {
+    div.rightside-header li:nth-child(5) {
         margin-left: 0px;
         margin-top: 0;
         display: flex;
@@ -2391,7 +2102,7 @@ button.start1{
         right: -1px
 
 }
-.right2 ul a{
+.rightside-header ul a{
     font-size: 12px;
 }
 .main p{
@@ -2408,9 +2119,8 @@ button.start1{
     margin-left: 290px;
 }
 .image-tab{
-    min-width: 1924px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 1440px;
+    
 }
 .nhs-tab{
     margin-block-end: -80px;
@@ -2432,6 +2142,9 @@ button.start1{
     max-width: 1310px;
     margin-left: auto;
     margin-right: auto;
+}
+.icon-text-mob{
+    width: 15%;
 }
 
 }
