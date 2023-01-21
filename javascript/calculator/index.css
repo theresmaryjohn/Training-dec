@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+}
+button{
+    border: 1px solid #777777;
+    background: white;
+    font-size: larger;
+    font-weight: 600;
+}
+#sum-el{
+    font-size: larger;
+    font-weight: 600;
+  
+}
+#num1-el, #num2-el{
+    font-size: larger;
+    text-decoration: underline;
+}
