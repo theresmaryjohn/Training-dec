@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    padding-top: 50px;
+}
+
+#box-el{
+    border: none;
+    background: lightseagreen;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 40px;
+    margin-bottom: 20px;
+}
