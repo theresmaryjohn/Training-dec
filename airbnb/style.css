@@ -103,7 +103,6 @@ header.tab-header, .prices{
     white-space: nowrap;
     border-bottom:1px solid #e5e4e2;
     padding-inline-start: 26px;
-    box-shadow: 0 1px 5px  #e5e4e2;
     column-gap: 22px;
 }
 .preferences a:first-child{
@@ -134,40 +133,46 @@ header.tab-header, .prices{
 }
 .places-to-stay{
     padding: 0 24px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(18, 1fr);
 }
-.img img{
-    height:100%;
-    width: 100%;
-    border-radius: 10px;
+.img{
+    height: 63%;
     margin-top: 22px;
-    margin-bottom: 27px;
+    margin-bottom: 36px;
     position: relative;
 }
-.like img{
-    transform: translateY(-248px);
+.img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+   object-fit: cover;
+}
+.like {
    height: 24px;
    width: 24px;
-   margin-left: 233px;
    position: absolute;
-   top:58%
+   top:6%;
+   left: 85%;
    
 }
 .text{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -38px;
+    margin-top: -40px;
     margin-bottom: -11px;
 }
 .text span{
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Cereal-book-medium';
 }
 .text img{
     height: 12px;
     width: 12px;
-    margin-right: -121px;
     margin-bottom: -1px;
+    margin-right: 2px;
 }
 .text p{
     margin-top: 19px;
@@ -196,9 +201,33 @@ header.tab-header, .prices{
     margin-right: 3px;
 }
 
-
-
-
+.img i{
+    color: #f7f7f7;
+    position: absolute;
+    bottom: 10px;
+    left: 107px;
+    height: -2px;
+    width: -4px;
+    font-size: 6px;
+}
+.img i:nth-of-type(2){
+margin-inline-start: 11px;
+color: lightgray;
+}
+.img i:nth-of-type(3){
+    margin-inline-start: 21px;
+    color: lightgray;
+    }
+    .img i:nth-of-type(4){
+        margin-inline-start: 31px;
+        color: lightgray;
+        font-size: 5px;
+        }
+        .img i:nth-of-type(5){
+            margin-inline-start: 41px;
+            color: lightgray;
+            font-size: 4px;
+            }
 }
 @media screen and (min-width:768px) {
     .mobile-header{
@@ -393,6 +422,14 @@ header.tab-header, .prices{
 }
 .nav-airbnb{
     display: flex;
+}
+.places-to-stay{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    column-gap: 26px;
+    margin-block-start: 9px;
+    margin-inline: 11px;
 }
 
 }
