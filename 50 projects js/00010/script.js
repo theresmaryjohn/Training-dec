@@ -6,7 +6,7 @@ const jokeBtn=document.getElementById('jokeBtn')
 jokeBtn.addEventListener('click', generateJoke)
 
 generateJoke()
-
+//using .then()
 function generateJoke(){
     const config = {
         headers: {
@@ -34,5 +34,20 @@ function generateJoke(){
 }
 
 
-
+//using async
 //Another method
+//The word “async” before a function means one simple thing: a function always returns a promise. Other values are wrapped in a resolved promise automatically.
+//for eg async function f() {
+//return 1;}
+//For instance, this function returns a resolved promise with the result of 1
+// async function generateJoke(){
+//     const config={
+//         headers:{
+//             Accept: 'application/json',
+//         },
+//     }
+//the keyword await makes JavaScript wait until that promise settles and returns its result.
+//     const res = await fetch('https://icanhazdadjoke.com', config)
+//     const data = await res.json()
+//     jokeEl.innerHTML=data.joke
+// }
