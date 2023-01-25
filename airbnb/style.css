@@ -120,7 +120,7 @@ header.tab-header, .prices{
     
 }
 .preferences a{
-    font-size: 12px;
+    font-size: 11px;
     padding: 14px 2px 12px 0px;
     color:#717171;
     display: flex;
@@ -426,7 +426,7 @@ color: lightgray;
 .places-to-stay{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: none;
+    grid-template-rows: repeat(9, 1fr);
     column-gap: 26px;
     margin-block-start: 9px;
     margin-inline: 11px;
@@ -557,6 +557,14 @@ color: lightgray;
 }
 .lap-head{
     display: none;
+}
+.places-to-stay{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 26px;
+    margin-block-start: 9px;
+    margin-inline: 11px;
 }
 }
 @media screen and (min-width:1128px){
