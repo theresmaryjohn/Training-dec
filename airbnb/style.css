@@ -200,6 +200,9 @@ header.tab-header, .prices{
     font-family: 'Cereal-book-medium';
     margin-right: 3px;
 }
+.price p{
+    margin: 0;
+}
 
 .img i{
     color: #f7f7f7;
@@ -227,6 +230,9 @@ color: lightgray;
             margin-inline-start: 41px;
             color: lightgray;
             font-size: 4px;
+            }
+            .place-one{
+                height: fit-content;
             }
 }
 @media screen and (min-width:768px) {
