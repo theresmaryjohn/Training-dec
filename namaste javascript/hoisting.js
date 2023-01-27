@@ -37,6 +37,9 @@
 //not defined(when x=7 removed)-now we do not reserve space for x as x is not present in the whole code
 //but if we define getName as an arrow function-then we get getName is not a function oc calling it
 
+// getName();
+// console.log(x);
+// console.log(getName);
 getName();
 console.log(x);
 console.log(getName);
@@ -44,6 +47,9 @@ console.log(getName);
 var x = 7;
 
 var getName = () => {
-  console.log("Namate Javascript");//behaviour is as var
+  console.log("Namaste Javascript"); //behaviour is as var
 };
+
 //here it behaves as another variable-as before execution it allocates undefined to getName
+//so if we put getName() on top we get that the function is undefined
+//but if we put it down then by step by step execution it then behaves as a function and we get the value

@@ -1,5 +1,5 @@
 const labels=document.querySelectorAll('.form-control label')
-
+console.log(labels);//the queryselectorall fetches the list and put it as na array
 labels.forEach(label=> {
     label.innerHTML=label.innerText
     //the innerText takes the letters of fist label here Email and the split changes it into an array
