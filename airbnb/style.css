@@ -504,7 +504,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(9, 1fr);
     column-gap: 26px;
-    margin-block-start: 9px;
+    margin-block-start: 14px;
     margin-inline: 11px;
   }
   .img {
@@ -513,11 +513,27 @@ body {
     margin-bottom: 31px;
     position: relative;
   }
+  .img img{
+    height: 98%;
+  }
   .places-to-stay {
     margin-inline: 14px;
   }
   .img i {
     left: 138px;
+    bottom: 18px;
+  }
+  .diff-categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 8px;
+  }
+  .future-getaways{
+    padding: 0 40px;
+    margin: 0 0 40px;
+  }
+  .find-more{
+    padding: 32px 0 0;
   }
 }
 @media screen and (min-width: 778px) {
@@ -536,8 +552,11 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 17px 40px 0px 40px;
-    border-bottom: 1px solid #e5e4e2;
     padding-bottom: 17px;
+  }
+  .nav-airbnb{
+    border-top:1px solid #e5e4e2;
+    padding: 0 52px;
   }
   .airbnb-icon-text {
     display: flex;
@@ -666,7 +685,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 16px;
-    border-bottom: 1px solid #e5e4e2;
     padding-bottom: 17px;
     padding-inline: 38px;
     max-width: 1361px;
@@ -786,11 +804,13 @@ body {
     margin-inline: auto;
   }
 }
-@media screen and (min-width: 1800px) {
-  .nav-airbnb {
-    max-width: 1760px;
-    margin-inline: auto;
+@media screen and (min-width:1400px){
+  .nav-airbnb{
+    padding: 0 3px;
   }
+}
+@media screen and (min-width: 1800px) {
+  
   .preferences {
     max-width: 1550px;
     margin-inline: auto;
