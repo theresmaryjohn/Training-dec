@@ -100,6 +100,11 @@ body {
   .lap-head {
     display: none;
   }
+  .nav-airbnb{
+    position: sticky;
+    top: 70px;
+    z-index: 100
+  }
   .preferences {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
@@ -262,6 +267,7 @@ body {
   }
   .future-getaways{
     padding: 0 24px;
+    padding-bottom: 32px;
   }
   .getaways h2{
     font-size: 22px;
@@ -291,7 +297,7 @@ body {
     font-family: 'Cereal-book-medium';
   }
   .diff-categories{
-    padding:0 0 32px ;
+    padding:0 0 92px ;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -307,16 +313,107 @@ body {
     font-family: 'Cereal-book-medium';
     text-decoration: underline;
   }
+  .footer-mob {
+    padding: 32px 24px 10px  24px;
+    background-color:#f7f7f7;
+    border-top:1px solid #dddddd ;
+  }
+  .heading-one h3, 
+  .heading-two h3, 
+  .heading-three h3, 
+  .heading-four h3{
+    font-size: 14px;
+    font-family:'Cereal-book-bold';
+    margin: 0;
+  }
+  .support, 
+  .community, 
+  .hosting, 
+  .airbnb{
+    padding: 0 0 24px;
+    margin: 0 0 24px;
+    border-bottom: 1px solid #dddddd;
+  }
+  .airbnb{
+    margin-bottom: 0;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .details-one, 
+  .details-two, 
+  .details-three, 
+  .details-four {
+    padding-left: 0;
+  }
+  .details-one li, 
+  .details-two li, 
+  .details-three li, 
+  .details-four li{
+    font-size: 14px;
+    font-family: 'Cereal-book';
+    margin-top: 12px;
+    color: #222222;
+  }
+  .footer-end{
+    padding: 24px 0;
+  }
+  .lang{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .icon, 
+  .rate-in-dollar{
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-right: 16px;
+  }
+  .icon img{
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+  }
+  .language {
+    font-size: 14px;
+    font-family: 'Cereal-book-medium';
+    margin-top: 0;
+    margin-bottom: 2px;
+    }
+    .dollars{
+      font-size: 14px;
+      word-spacing: 5px;
+      font-family: 'Cereal-book-medium';
+    }
+    .before-checking{
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 71%;
+    }
+    .before-checking li{
+      font-size: 14px;
+      font-family: 'Cereal-book';
+      margin-right: 13px;
+      color: #222222;
+    }
 }
 @media screen and (min-width: 768px) {
   .mobile-header {
     display: none;
+   
   }
   header.tab-header {
     display: flex;
     justify-content: space-between;
     padding: 17px 40px 17px 40px;
     border-bottom: 1px solid #e5e4e2;
+    position: sticky;
+    background-color: white;
+    top: -1px;
+    z-index: 100;
   }
   .prices {
     width: 100%;
@@ -535,6 +632,83 @@ body {
   .find-more{
     padding: 32px 0 0;
   }
+  .details-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2px;
+  }
+  .supporting-people{
+    width: 71%;
+  }
+  .report{
+    width: 68%;
+  }
+  .details-two{
+    display: grid;
+    grid-template-columns: 15rem 15rem;
+  }
+  .airbnb-org{
+    width: 68%;
+  }
+  .details-three{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .details-four{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-end{
+    display: none;
+  }
+  .footer-end-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #dddddd;
+  }
+  .icon-tab, 
+  .rate-in-dollar-tab{
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-right: 16px;
+  }
+  .icon-tab img{
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+  }
+  .lang-tab{
+    display: flex;
+    margin-right: 41px;
+  }
+  .language-tab{
+    font-size: 14px;
+    font-family: 'Cereal-book-medium';
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+  .dollars-tab{
+    font-size: 14px;
+    word-spacing: 5px;
+    font-family: 'Cereal-book-medium';
+  }
+  .social-tab i{
+    margin-right: 10px;
+  }
+  .sticky-footer{
+    display: flex;
+    padding: 10px 0 10px 0;
+  }
+  .before-checking-tab{
+    padding: 0;
+  }
+  
 }
 @media screen and (min-width: 778px) {
   .anywhere button p {
