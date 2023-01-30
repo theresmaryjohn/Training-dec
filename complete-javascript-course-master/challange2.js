@@ -27,3 +27,39 @@ console.log(+'john');
 //coverts one to match the other
 //ie if we concatenate a number with string numb is changed to string
 
+//truthy and falsy values
+//on converting to boolean the falsy values shows false and truthy values show true
+//the falsy values are :0,'',undefined, null,NaN
+const money=0;//here money is a number
+//the if -else statement tries to change the condition inside to a boolean
+if(money){
+    //here the condition becomes false as it is a falsy value
+    console.log("Don't spend it all;)");
+} else {
+    console.log('You should get a job!');
+}
+//here we get the o/p you should get a job!
+//if money has any other value then we get the if statement
+
+let height;
+//here height is undefined-so falsy value ie else is executed
+if (height){
+    console.log('yay!height is defined');
+}else{
+    console.log('height is undefined');
+}
+
+const favorite=Number(prompt('what is your favorite number'))
+console.log(favorite);
+//here prompt create an input like alert box where we can input our favorite 
+//number and then it stores in the favorite const
+//the o/p is given out as a string
+//adding Number changes it to number
+const hasDriversLic=true
+const hasGoodVision=true
+console.log(hasDriversLic&&hasGoodVision);
+
+
+
+
+
