@@ -74,7 +74,7 @@ else {
 //we can also write the operator like this
 //lot easier to write than the if else statement
 console.log(`I like to drink ${age>=18?'wine':'water'}`);
-//in template literals we can only write expressions an dthe ternary operator acts as an expression
+//in template literals we can only write expressions and the ternary operator acts as an expression
 //the if else block cant be put inside a template literal
 
 //coding challange
