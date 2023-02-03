@@ -38,21 +38,18 @@ console.log(friends.includes('jay'));
 if (friends.includes('jay')){
     console.log('You have a friend called jay');
 }
-let tip;
+
+
+
 
 function calcTip(bill){
     
-    if(bill>50 && bill<300){
-        tip=15/100
-
-    }
-    else{
-        tip=20/100
-    }
-    let total=bill+tip
-   
-    return total
+   return bill>=50&&bill<=300?bill*0.15:bill*0.2;
 }
-console.log(calcTip(125),',', tip);
-console.log(calcTip(555),',', tip);
-console.log(calcTip(44), ',',tip);
+let bill=[125,555,44];
+const tip=[calcTip(bill[0]), calcTip(bill[1]),calcTip(bill[2])];
+
+console.log(bill,tip);
+const total=[(bill[0]+tip[0]),(bill[1]+tip[1]),(bill[2]+tip[2])]
+console.log(total);
+

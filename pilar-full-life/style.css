@@ -1,0 +1,21 @@
+
+
+
+
+@media screen and (min-width:345px){
+    .full-life_header{
+        background-image: url('assets/top345.png');
+    }
+   .full-life_header h1{
+        font-size: 48px;
+        line-height: 56px;
+        color: white;
+    }
+    .full-life_header p{
+       
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+}
