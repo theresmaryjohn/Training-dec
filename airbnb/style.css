@@ -23,6 +23,26 @@ body {
   src: url(img/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2)
     format("truetype");
 }
+.preferences a:hover {
+  border-bottom: 2px solid black;
+  color: black;
+}
+.accountlistslap:hover {
+  box-shadow: 0 2px 5px rgb(0 0 0 / 18%);
+  cursor: pointer;
+}
+.textrightlap:hover {
+  background: #e5e4e2;
+  border-radius: 15px;
+  padding-block: 5px;
+  padding-inline: 9px;
+  cursor: pointer;
+}
+.place-one:hover .hoverImg i {
+  cursor: pointer;
+  opacity: 1;
+}
+
 @media screen and (min-width: 320px) {
   .mobile-header {
     padding: 14px 19px 0 32px;
@@ -137,6 +157,19 @@ body {
     align-items: center;
     font-family: "Cereal-book-medium";
   }
+  .place-one {
+    position: relative;
+  }
+  .hoverImg i {
+    position: absolute;
+    height: 30px;
+    font-size: 28px;
+    top: 42%;
+    left: 90%;
+    transform: translate(-90%, -42%);
+    opacity: 0;
+  }
+
   .filter {
     display: none;
   }
@@ -158,6 +191,7 @@ body {
     border-radius: 10px;
     object-fit: cover;
   }
+
   .like {
     height: 24px;
     width: 24px;
@@ -617,6 +651,7 @@ body {
   }
   .nav-airbnb {
     display: flex;
+    top: 81px;
   }
   .places-to-stay {
     display: grid;
@@ -824,8 +859,15 @@ body {
     background-color: white;
   }
   .nav-airbnb {
-    border-top: 1px solid #e5e4e2;
     padding: 0 10px;
+    top: 81px;
+  }
+  .desktop-header{
+    border-bottom: 1px solid #e5e4e2;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
   }
   .airbnb-icon-text {
     display: flex;
@@ -1080,15 +1122,13 @@ body {
     max-width: 1342px;
     margin-inline: auto;
   }
-  .preferences {
-    max-width: 1168px;
-    margin-inline: auto;
-  }
 }
 @media screen and (min-width: 1440px) {
   .nav-airbnb {
     padding: 0 3px;
     background-color: white;
+    max-width: 1340px;
+    margin-inline: auto;
   }
   .sticky-footer {
     display: flex;
@@ -1183,5 +1223,9 @@ body {
     display: flex;
     justify-content: space-between;
     padding-inline: 93px;
+  }
+  .nav-airbnb {
+    max-width: 1722px;
+    margin-inline: auto;
   }
 }
