@@ -753,10 +753,7 @@ body {
   .airbnb-org {
     width: 68%;
   }
-  .details-three {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  .details-three,
   .details-four {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -805,8 +802,7 @@ body {
   }
   .sticky-footer {
     display: flex;
-    padding: 0px 40px 14px;
-    padding-bottom: 0;
+    padding: 0px 40px 0 14px;
     background-color: white;
     border-top: 1px solid #dddddd;
     height: 70px;
@@ -897,8 +893,7 @@ body {
   .tab-head {
     display: flex;
     justify-content: space-between;
-    padding: 17px 40px 0px 40px;
-    padding-bottom: 17px;
+    padding: 17px 40px 17px 40px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -1161,8 +1156,8 @@ body {
   }
   .places-to-stay {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     column-gap: 26px;
     row-gap: 5px;
     margin-block-start: 4px;
