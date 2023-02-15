@@ -9,22 +9,56 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       crossorigin="anonymous" />
-    <title>Notes App</title>
+    <title>Catch the Insect</title>
   </head>
   <body>
-<button class="add" id="add">
-    <i class="fas fa-plus"></i>Add note
-</button>
-<!-- the div is to be inserted via js -->
-<!-- <div class="note">
-    <div class="tools">
-        <button class="edit"><i class="fas fa-edit"></i></button>
-        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+    <!-- we have three screens here ist page catch the insecs
+    second says which is your favorite,and 3rd is annoyed msg -->
+    <div class="screen">
+<h1>Catch The Insect</h1>
+<button class="btn" id="start-btn">Play Game</button>
     </div>
-    <div class="hidden"></div>
-    <textarea ></textarea>
-</div> -->
-
+    <div class="screen">
+      <h1>What is your 'favorite' insect?</h1>
+      <ul class="insects-list">
+        <li>
+          <button class="choose-insect-btn">
+            <p>Fly</p>
+            <img src="fly.png" alt="">
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+          <p>Mosquito</p>
+          <img src="mosquito.png" alt="">
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+          <p>Spider</p>
+          <img src="spider.png" alt="">
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+          <p>Roach</p>
+          <img src="roach.png" alt="">
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="screen game-container">
+      <h3 id="time">Time: 00:00</h3>
+      <h3 id="score">Score: 0</h3>
+      <h5 id="message" class="message">
+        <!-- we remove message visible class to message as we dont want to see it now -->
+        Are you annoyed yet?<br>
+        You are playing an impossible game.
+      </h5>
+      <!--  <div class="insect">
+        <img src="fly.png" alt="">
+      </div> this is to be done with js-->
+    </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js"></script>
     <script src="script.js"></script>
 
