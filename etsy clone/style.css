@@ -1,134 +1,395 @@
-
-
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'Graphik-m';
-    src: url('img/Graphik-Medium-Web.woff2');
+  font-family: "Graphik-m";
+  src: url("img/Graphik-Medium-Web.woff2");
 }
 @font-face {
-    font-family: 'Graphik-r';
-    src: url('img/Graphik-Regular-Web.woff2');
+  font-family: "Graphik-r";
+  src: url("img/Graphik-Regular-Web.woff2");
 }
 @font-face {
-    font-family: 'Graphik-l';
-    src: url('img/Guardian-EgypTT-Light.woff2');
+  font-family: "Graphik-l";
+  src: url("img/Guardian-EgypTT-Light.woff2");
 }
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
-@media screen and (min-width:320px){
-    
-
-.header{
+@media screen and (min-width: 320px) {
+  .header {
     display: flex;
     justify-content: space-between;
     padding-left: 9px;
     padding-right: 13px;
-}
-.sign-in-fav ul{ 
+  }
+  .head-section {
+    padding-bottom: 8px;
+  }
+  .sign-in-fav ul {
     list-style-type: none;
     display: flex;
     margin: 0;
-    padding:0;
-}
-.etsy-icon img{
+    padding: 0;
+  }
+  .etsy-icon img {
     padding-top: 7px;
-}
-.sign-in-fav ul li:nth-of-type(1){
+  }
+  .sign-in-fav ul li:nth-of-type(1) {
     font-size: 13px;
-    font-family: 'Graphik-m';
+    font-family: "Graphik-m";
     margin-right: 6px;
     padding: 16px 15px;
-}
-.sign-in-fav ul li:nth-of-type(2),
-.sign-in-fav ul li:nth-of-type(3){
-    padding:11px 11px 7px 12px;
-}
-.nav-bars{
+  }
+  .sign-in-fav {
+    padding-top: 0;
+    padding-right: 0;
+  }
+  .sign-in-fav ul li:nth-of-type(2),
+  .sign-in-fav ul li:nth-of-type(3) {
+    padding: 11px 11px 7px 12px;
+  }
+  .nav-bars {
     display: flex;
     justify-content: space-between;
-}
-.bars{
+  }
+  .bars {
     background-color: transparent;
     border: 0;
     padding: 12px;
-}
-.form-input{
+  }
+  .form-input {
     position: relative;
     width: 84%;
-}
-#search{
+  }
+  #search {
     border: 2px solid black;
     border-radius: 50px;
     background-color: #f5f5f5;
     padding: 9px 100px 9px 15px;
     width: 95%;
     height: 92%;
-}
-#search::placeholder{
+  }
+  #search::placeholder {
     font-size: 16px;
     padding-right: 42px;
-}
-.search-icon{
+  }
+  .search-icon {
     position: absolute;
     border: 0;
     background-color: transparent;
     right: 10%;
     top: 15%;
-    transform: translate(-10%,10%);
-}
-}
- @media screen and (min-width:768px){
-    .etsy-icon img{
-        width: 80px;
-    }
-    .header{
-        padding-right: 21px;
-    }
-    .nav-bars{
-        display: flex;
-    }
-    .form-input{
-        width: 100%;
-    }
-    .search-icon{
-        right: 5%;
-    }
-    #search{
-        width: 97%;
-    }
-}
-@media screen and (min-width:1024px){
-    .bars{
-        display: none;
-    }
-    .etsy-icon{
-        padding-left: 25px;
-    }
-    .etsy-icon img{
-        padding-top: 17px;
-        width: 80px;
-    }
-    #search{
-        padding: 14px 100px 14px 15px;
-        width: 91%;
-        height: 100%;
-    }
-    .search-icon{
-        right: 11%;
-    }
-    .form-input{
-        position: relative;
-        width: 72%;
-        left: 125px;
-        top: -49px;
-    }
-    .sign-in-fav{
-        padding-top: 8px;
-    }
+    transform: translate(-10%, 10%);
+  }
+  .collections {
+    display: none;
+  }
+  p.text {
+    background-color: #d7e6f5;
+    border-top: 1px solid #d3d0d0;
+    font-size: 20px;
+    font-family: "Graphik-l";
+    text-align: center;
+    line-height: 1.6;
+    padding: 18px 12px 0;
+    margin: 0;
+  }
+  .container-list {
+    background-color: #d7e6f5;
+    height: 222px;
+  }
+  .container-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 19px;
+  }
+  .container-list ul li {
+    margin-inline-start: 12px;
+    margin-block-end: 26px;
+  }
+  .container-list ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-family: "Graphik-m";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+  .container-list ul li img {
+    height: 86.28px;
+    width: 86.28px;
+    border-radius: 50%;
+    margin-inline-start: 2px;
+  }
+  .deals-of-day{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 12px;
+    position: relative;
+    top: 115px;
+  }
+  .deals-of-day a{
+    font-size: 13px;
+    font-family: 'Graphik-m';
+    transform: translateX(-2px);
+  }
+  .deals-of-day a i{
+    margin-left: 6px;
+  }
+  .find-more{
+    font-size: 24px;
+    font-family: 'Graphik-r';
+    line-height: 32px;
+    margin: 0;
+    transform: translateY(-5px);
+  }
+  .discounts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 12px;
+   
+  }
+  .discounts ul{
+    padding: 0;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    position: relative;
+    top: 113px;
+    height: 259px;
+    width: 142px;
+  }
+  .discounts ul li{
+    list-style-type: none;
+  }
+  .discounts ul li a{
+    text-decoration: none;
+   
+  }
+  .discounts ul li a small{
+    font-size: 13px;
+    font-family: 'Graphik-r';
+    color: black;
+    margin-left: 12px;
+  }
+  .discounts ul li a p{
+    font-size: 16px;
+    font-family: 'Graphik-m';
+    color: black;
+    width: 10px;
+    margin-left: 12px;
+  }
+  .discounts img{
+    height: 140px;
+    width: 140px;
+    border-radius: 10px 10px 0 0;
+  }
+  
 
-} 
+}
+@media screen and (min-width: 768px) {
+  .etsy-icon img {
+    width: 80px;
+  }
+  .header {
+    padding-right: 21px;
+  }
+  .nav-bars {
+    display: flex;
+  }
+  .form-input {
+    width: 100%;
+  }
+  .search-icon {
+    right: 5%;
+  }
+  #search {
+    width: 97%;
+  }
+  .collections {
+    display: none;
+  }
+  .container-list {
+    height: 85px;
+  }
+  p.text {
+    font-size: 26px;
+  }
+  .container-list ul {
+    justify-content: space-evenly;
+  }
+  .deals-of-day{
+    padding-inline: 30px;
+  }
+  .find-more{
+    font-size: 28px;
+  }
+  .discounts{
+    margin-inline-end: 19px;
+  }
+  .discounts ul{
+    height: 321px;
+    width: 224px;
+  }
+  .discounts img{
+    height: 222px;
+    width: 222px;
+  }
+  .discounts ul li a p{
+    width: 205px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bars {
+    display: none;
+  }
+  .etsy-icon {
+    padding-left: 25px;
+  }
+  .etsy-icon img {
+    padding-top: 17px;
+    width: 80px;
+  }
+  #search {
+    padding: 14px 100px 14px 15px;
+    width: 91%;
+    height: 100%;
+  }
+  .search-icon {
+    right: 11%;
+  }
+  .form-input {
+    position: relative;
+    width: 72%;
+    left: 125px;
+    top: -49px;
+  }
+  .sign-in-fav {
+    padding-top: 13px;
+    padding-right: 13px;
+  }
+  .collections {
+    display: flex;
+    position: relative;
+    top: -52px;
+  }
+  .collections ul {
+    list-style-type: none;
+    display: flex;
+    padding-right: 12px;
+  }
+  .collections ul li {
+    font-size: 14px;
+    font-family: "Graphik-l";
+    margin-right: 30px;
+    margin-top: 4px;
+  }
+  .collections ul li:nth-of-type(9) {
+    white-space: nowrap;
+    margin-top: 12px;
+  }
+  .container-list ul li img {
+    height: 114px;
+    width: 114px;
+  }
+  p.text {
+    font-size: 32px;
+  }
+  .container {
+    position: relative;
+    top: -56px;
+  }
+  .deals-of-day{
+    position: relative;
+    top:96px;
+    padding-inline: 39px;
+  }
+  .discounts ul{
+    height: 261px;
+    width: 143px;
+    margin-top: 0;
+  }
+  .discounts img{
+    height: 142px;
+    width: 142px;
+  }
+  .discounts ul li a p{
+    width: 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .form-input {
+    position: relative;
+    width: 73%;
+    left: 143px;
+  }
+  #search {
+    width: 100%;
+  }
+  .etsy-icon {
+    padding-left: 42px;
+  }
+  .search-icon {
+    right: 1%;
+  }
+  .sign-in-fav {
+    padding-right: 35px;
+  }
+  .head-section {
+    max-width: 1446px;
+    margin-inline: auto;
+  }
+  .collections ul li {
+    margin-right: 10px;
+    width: 145px;
+  }
+  .collections ul li:nth-of-type(9) {
+    white-space: nowrap;
+    margin-top: 4px;
+  }
+  .collections ul li:nth-of-type(2) {
+    margin-right: 42px;
+  }
+  .collections {
+    max-width: 1410px;
+    margin-inline: auto;
+  }
+  .container-list {
+    height: 104px;
+  }
+  .container-list ul {
+    max-width: 1064px;
+    margin-inline: auto;
+  }
+  .deals-of-day{
+    max-width: 1500px;
+    margin-inline: auto;
+  }
+  .discounts ul{
+    height: 303px;
+    width: 206px;
+  }
+  .discounts li img{
+    height: 204px;
+    width: 204px;
+  }
+  .discounts{
+    max-width: 1470px;
+    margin-inline: auto;
+  }
+  .discounts ul li a p{
+    width: 140px;
+  }
+}
