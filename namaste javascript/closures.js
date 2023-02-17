@@ -106,3 +106,7 @@ x()
 //with var also we can create this by using anoter function after 
 //for loop for i and inside function we write the sttimeout
 //and then each time fuction is called it makes a new copy each time
+
+
+
+

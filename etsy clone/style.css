@@ -130,7 +130,7 @@ body {
     border-radius: 50%;
     margin-inline-start: 2px;
   }
-  .deals-of-day{
+  .deals-of-day {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,31 +138,30 @@ body {
     position: relative;
     top: 115px;
   }
-  .deals-of-day a{
+  .deals-of-day a {
     font-size: 13px;
-    font-family: 'Graphik-m';
+    font-family: "Graphik-m";
     transform: translateX(-2px);
   }
-  .deals-of-day a i{
+  .deals-of-day a i {
     margin-left: 6px;
   }
-  .find-more{
+  .find-more {
     font-size: 24px;
-    font-family: 'Graphik-r';
+    font-family: "Graphik-r";
     line-height: 32px;
     margin: 0;
     transform: translateY(-5px);
   }
-  .discounts{
+  .discounts {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0 12px;
-   
   }
-  .discounts ul{
+  .discounts ul {
     padding: 0;
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -170,34 +169,101 @@ body {
     top: 113px;
     height: 259px;
     width: 142px;
+    margin-bottom: 0;
   }
-  .discounts ul li{
+  .discounts ul li {
     list-style-type: none;
   }
-  .discounts ul li a{
+  .discounts ul li a {
     text-decoration: none;
-   
   }
-  .discounts ul li a small{
+  .discounts ul li a small {
     font-size: 13px;
-    font-family: 'Graphik-r';
+    font-family: "Graphik-r";
     color: black;
     margin-left: 12px;
   }
-  .discounts ul li a p{
+  .discounts ul li a p {
     font-size: 16px;
-    font-family: 'Graphik-m';
+    font-family: "Graphik-m";
     color: black;
     width: 10px;
     margin-left: 12px;
   }
-  .discounts img{
+  .discounts img {
     height: 140px;
     width: 140px;
     border-radius: 10px 10px 0 0;
   }
-  
-
+  .popular {
+    position: relative;
+    top: 120px;
+    padding: 0 12px;
+  }
+  .popular h3 {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Graphik-r";
+  }
+  .popular ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .popular ul li {
+    list-style-type: none;
+    width: 50%;
+  }
+  .popular ul li a {
+    display: block;
+    color: black;
+    font-size: 13px;
+    font-family: 'Graphik-m';
+    margin: 0 0 3px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 88%;
+  }
+  .popular ul li img {
+    height: 113px;
+    width: 142px;
+    border-radius: 10px;
+  }
+  .popular ul li video{
+    height: 113px;
+    width: 142px;
+    border-radius: 10px;
+  }
+  .popular ul li i{
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .popular ul li span{
+    font-size: 13px;
+    color: #595959;
+    font-family: 'Graphik-l';
+  }
+  .popular ul li p {
+    margin: 0;
+  }
+  .popular ul li p b{
+    font-size: 16px;
+    font-family: 'Graphik-r';
+  }
+  .popular ul li p span{
+    color: #258635;
+    font-size: 13px;
+    font-family: 'Graphik-r';
+    text-decoration: line-through;
+  }
+  .popular ul li p small{
+    color: #258635;
+    font-size: 13px;
+    font-family: 'Graphik-r';
+  }
 }
 @media screen and (min-width: 768px) {
   .etsy-icon img {
@@ -230,24 +296,24 @@ body {
   .container-list ul {
     justify-content: space-evenly;
   }
-  .deals-of-day{
+  .deals-of-day {
     padding-inline: 30px;
   }
-  .find-more{
+  .find-more {
     font-size: 28px;
   }
-  .discounts{
+  .discounts {
     margin-inline-end: 19px;
   }
-  .discounts ul{
+  .discounts ul {
     height: 321px;
     width: 224px;
   }
-  .discounts img{
+  .discounts img {
     height: 222px;
     width: 222px;
   }
-  .discounts ul li a p{
+  .discounts ul li a p {
     width: 205px;
   }
 }
@@ -311,21 +377,21 @@ body {
     position: relative;
     top: -56px;
   }
-  .deals-of-day{
+  .deals-of-day {
     position: relative;
-    top:96px;
+    top: 96px;
     padding-inline: 39px;
   }
-  .discounts ul{
+  .discounts ul {
     height: 261px;
     width: 143px;
     margin-top: 0;
   }
-  .discounts img{
+  .discounts img {
     height: 142px;
     width: 142px;
   }
-  .discounts ul li a p{
+  .discounts ul li a p {
     width: 15px;
   }
 }
@@ -373,23 +439,23 @@ body {
     max-width: 1064px;
     margin-inline: auto;
   }
-  .deals-of-day{
+  .deals-of-day {
     max-width: 1500px;
     margin-inline: auto;
   }
-  .discounts ul{
+  .discounts ul {
     height: 303px;
     width: 206px;
   }
-  .discounts li img{
+  .discounts li img {
     height: 204px;
     width: 204px;
   }
-  .discounts{
+  .discounts {
     max-width: 1470px;
     margin-inline: auto;
   }
-  .discounts ul li a p{
+  .discounts ul li a p {
     width: 140px;
   }
 }
