@@ -227,12 +227,12 @@ body {
     overflow: hidden;
     width: 88%;
   }
-  .popular ul li img {
+  .popular-image {
     height: 113px;
     width: 142px;
     border-radius: 10px;
   }
-  .popular ul li video{
+  .popular-video{
     height: 113px;
     width: 142px;
     border-radius: 10px;
