@@ -58,6 +58,38 @@ const discountItems = [
     text: "Wedding Clothing",
   },
 ];
+const popularGifts = [
+  {
+    name: "Birth Flower Jewelry Travel Case, Birth Month Flower Gift, Personalized Birthday Gift, Leather Jewelry Travel Case, Custom Jewelry Case",
+    photo: "img/0301.avif",
+    rating:"",
+  },
+  {
+    name: "Up to 40% off on",
+    photo: "img/0202.webp",
+    text: "Women's Western Clothing",
+  },
+  {
+    name: "Up to 40% off on",
+    photo: "img/0203.webp",
+    text: "Men's Clothing",
+  },
+  {
+    name: "Up to 40% off on",
+    photo: "img/0204.webp",
+    text: "Fashion Jewellery",
+  },
+  {
+    name: "Up to 40% off on",
+    photo: "img/0205.webp",
+    text: "Winter Clothing",
+  },
+  {
+    name: "Up to 40% off on",
+    photo: "img/0206.webp",
+    text: "Wedding Clothing",
+  },
+];
 addList();
 function addList() {
   const addContents = document.createElement("ul");
@@ -112,3 +144,4 @@ function discountList() {
   }
 
 }
+

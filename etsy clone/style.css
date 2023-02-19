@@ -316,6 +316,19 @@ body {
   .discounts ul li a p {
     width: 205px;
   }
+  .popular-image{
+    height: 181px;
+    width: 228px;
+  }
+  .popular ul li a{
+    margin: 0;
+    white-space:normal;
+    width: 58%;
+    justify-content: space-around;
+  }
+  .popular ul li{
+    width: 33%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .bars {
@@ -394,6 +407,25 @@ body {
   .discounts ul li a p {
     width: 15px;
   }
+  .popular-image{
+    height: 139px;
+    width: 176px;
+  }
+  .popular h3{
+    text-align: left;
+    font-size: 24px;
+  }
+  .popular ul{
+    flex-wrap: nowrap;
+    width: 60%;
+  }
+  .popular ul li{
+    margin-right: 27px;
+  }
+  .popular ul li:nth-of-type(6){
+    display: none;
+  }
+
 }
 @media screen and (min-width: 1440px) {
   .form-input {
@@ -458,4 +490,19 @@ body {
   .discounts ul li a p {
     width: 140px;
   }
+  .popular{
+    padding: 0 42px;
+  }
+  .popular-image{
+    height: 199px;
+    width: 251px;
+   
+  }
+  .popular ul li{
+    margin-right: 30px;
+  }
+  /* .popular ul{
+    max-width: 1470px;
+    margin-inline: auto;
+  } */
 }
