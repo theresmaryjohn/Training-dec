@@ -112,6 +112,17 @@ body {
   .container-list ul li {
     margin-inline-start: 12px;
     margin-block-end: 26px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-list ul li:hover img{
+    transform: scale(1.05);
+  }
+  .container-list ul li:hover{
+    border-bottom: 2px solid black;
   }
   .container-list ul li a {
     text-decoration: none;
@@ -129,6 +140,7 @@ body {
     width: 86.28px;
     border-radius: 50%;
     margin-inline-start: 2px;
+    padding-bottom: 8px;
   }
   .deals-of-day {
     display: flex;
@@ -171,6 +183,9 @@ body {
     width: 142px;
     margin-bottom: 0;
   }
+  .discounts ul:hover{
+    box-shadow: 0px 4px 20px  rgb(34 34 34 / 15%);
+  }
   .discounts ul li {
     list-style-type: none;
   }
@@ -201,9 +216,10 @@ body {
     padding: 0 12px;
     padding-bottom: 60px;
   }
-  .popular-gifts{
+  .popular-gifts {
     margin-bottom: 80px;
   }
+
   .popular h3 {
     text-align: center;
     font-size: 18px;
@@ -214,18 +230,22 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
   }
   .popular ul li {
     list-style-type: none;
     width: 50%;
     margin-bottom: 10px;
-    }
+  }
+  .popular ul li:hover{
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 18px rgb(34 34 34 / 20%);
+  }
   .popular ul li a {
     display: block;
     color: black;
     font-size: 13px;
-    font-family: 'Graphik-m';
+    font-family: "Graphik-m";
     margin: 0 0 3px;
     text-decoration: none;
     text-overflow: ellipsis;
@@ -233,7 +253,7 @@ body {
     overflow: hidden;
     width: 88%;
   }
-  .popular-div{
+  .popular-div {
     height: 113px;
     margin-bottom: 18px;
     position: relative;
@@ -244,104 +264,105 @@ body {
     border-radius: 10px;
     position: relative;
   }
- video{
+  video {
     height: 116px;
     width: 142px;
-   border-radius: 10px;
-   object-fit: cover;
-   
+    border-radius: 10px;
+    object-fit: cover;
   }
- 
-  .popular ul li:nth-of-type(2):hover video.popular-image{
+
+  .popular ul li:nth-of-type(2):hover video.popular-image {
     display: block;
     height: 100%;
     width: 100%;
   }
-  
-  .popular ul li .rating{
+
+  .popular ul li .rating {
     font-size: 12px;
     margin-bottom: 8px;
   }
-  .popular ul li span{
+  .popular ul li span {
     font-size: 13px;
     color: #595959;
-    font-family: 'Graphik-l';
+    font-family: "Graphik-l";
   }
   .popular ul li p {
     margin: 0;
   }
-  .popular ul li p b{
+  .popular ul li p b {
     font-size: 15px;
-    font-family: 'Graphik-r';
+    font-family: "Graphik-r";
   }
-  .popular ul li p span{
+  .popular ul li p span {
     color: #258635;
     font-size: 13px;
-    font-family: 'Graphik-r';
+    font-family: "Graphik-r";
     text-decoration: line-through;
   }
-  .popular ul li p small{
+  .popular ul li p small {
     color: #258635;
     font-size: 13px;
-    font-family: 'Graphik-r';
+    font-family: "Graphik-r";
   }
-  .deliveryInfo{
-      font-size: 11px;
-      background-color: #d4e9d7;
-      font-family: 'Graphik-m';
-      border-radius: 50px;
-      padding: 2px;
-      padding-inline: 14px;
-      display: inline;
+  .deliveryInfo {
+    font-size: 11px;
+    background-color: #d4e9d7;
+    font-family: "Graphik-m";
+    border-radius: 50px;
+    padding: 2px;
+    padding-inline: 14px;
+    display: inline;
   }
-  .like{
+  .like {
     position: absolute;
-    top:12px;
+    top: 12px;
     left: 110px;
     opacity: 0;
   }
-  .like img{
+  .like img {
     height: 20px;
     width: 20px;
     padding: 3px;
     background-color: white;
     border-radius: 50%;
   }
- .popular-div:hover .like{
+  .popular-div:hover .like {
     opacity: 1;
   }
 
-  .playbutton img{
+  .playbutton img {
     height: 30px;
     width: 30px;
     padding: 3px;
     background-color: white;
     border-radius: 50%;
   }
-  .playbutton{
+  .playbutton {
     position: absolute;
-    top:78px;
+    top: 78px;
     left: 100px;
   }
-  .footer-top{
+  .footer-top {
     background-color: #fdebd2;
     background-image: url(img/svgexport-17.svg);
     background-repeat: no-repeat;
     padding: 36px 30px;
     padding-bottom: 0;
   }
-  .footer-top img{
-    transform: translateY(10px);
+  .footer-top img {
+    transform: translateY(5px);
+    overflow-x: hidden;
+    width: 100%;
   }
-  .footer-top h2{
+  .footer-top h2 {
     margin-top: 60px;
     text-align: center;
     font-size: 32px;
-    font-family: 'Graphik-l';
+    font-family: "Graphik-l";
     margin-bottom: 6px;
     font-weight: 100;
   }
-  .footer-top a{
+  .footer-top a {
     font-size: 14px;
     color: black;
     text-align: center;
@@ -349,48 +370,46 @@ body {
   }
   .footerCommunity h3,
   .creators h3,
-  .peaceOfMind h3{
+  .peaceOfMind h3 {
     font-weight: 600;
-    font-family: 'Graphik-r';
+    font-family: "Graphik-r";
     font-size: 24px;
     line-height: 32px;
     text-align: center;
     margin-bottom: 18px;
   }
-  .textFooter{
-    font-family: 'Graphik-r';
+  .textFooter {
+    font-family: "Graphik-r";
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     text-align: center;
     width: 100%;
   }
-  .textFooter span{
-   border-bottom: 2px dotted #000;
-   text-decoration: none;
+  .textFooter span {
+    border-bottom: 2px dotted #000;
+    text-decoration: none;
   }
-  .questions h4{
+  .questions h4 {
     text-align: center;
     font-size: 19px;
     font-weight: 700;
-    font-family: 'Graphik-r';
+    font-family: "Graphik-r";
     line-height: 24px;
-
   }
-  .questions{
+  .questions {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .questions a{
-    /* background-image: url(img/svgexport-23.svg); */
+  .questions a {
     font-size: 18px;
     padding-block: 15px;
     padding-inline: 12px;
     margin: 12px 0 0;
     margin-bottom: 12px;
-    font-family: 'Graphik-r';
+    font-family: "Graphik-r";
     font-weight: 700;
     max-width: 190px;
     text-decoration: none;
@@ -398,27 +417,210 @@ body {
     border-radius: 50px;
     margin-inline: 30px;
   }
-  .text-community{
+  .text-community {
     display: flex;
     flex-direction: column;
   }
-  .offers{
-   background-color:#d7e6f5; 
-   padding: 18px 24px 24px;
-    }   
-  .offers-p{
+  .offers {
+    background-color: #d7e6f5;
+    padding: 18px 24px 24px;
+  }
+  .offers-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .offers-p {
     margin-block: 0;
     font-size: 16px;
     margin: 0 0 12px;
     text-align: center;
-    font-family: 'Graphik-m';
+    font-family: "Graphik-m";
     line-height: 1.4;
   }
-  .email-p{
+  .email-p {
     padding: 12px;
-    border-radius: 50px;
+    border: transparent;
+    background-color: transparent;
+    width: 100%;
   }
-  
+  .email-p::placeholder{
+    font-size: 16px;
+    font-family: "Graphik-r";
+  }
+  .form-email {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 2px 4px 0 rgb(34 34 34 / 10%) inset;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-bottom: 30px;
+  }
+
+  .subscribe {
+    text-align: left;
+    position: relative;
+    padding-right: 21px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    height: 48px;
+    font-size: 16px;
+    font-family: "Graphik-r";
+    white-space: nowrap;
+    z-index: 10;
+  }
+  img.darkblue{
+    transform: rotate(180deg);
+    position: relative;
+    top: -29px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .renewwable{
+    background-color: #4d6bc6;
+    position: relative;
+    top: -34px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center
+  }
+  p.powered{
+    font-size: 16px;
+    color: white;
+    font-family: 'Graphik-r';
+    margin-block: 15px;
+    text-align: center;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 5px;
+
+  }
+  .container-footer{
+    background-color: #2f466c;
+    position: relative;
+    top: -35px;
+    padding: 24px;
+  }
+  .shop-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: 'Graphik-r';
+    line-height: 2.8;
+  }
+  .shop{
+    padding-left: 0;
+    display: none;
+  }
+  .shop li{
+    list-style-type: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Graphik-r';
+    line-height: 1.5;
+  }
+  .shop.active{
+    display: contents;
+  }
+  .fa-chevron-down.active{
+    transform: rotate(180deg);
+  }
+
+  .download{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding-block: 6px;
+    margin-inline: 28px;
+    margin-block: 20px;
+  }
+  .download img{
+    height: 24px;
+    width: 24px;
+  }
+  .download b{
+    font-size: 13px;
+    font-family: 'Graphik-r';
+    color: white;
+    margin-left: 6px;
+  }
+  ul.icons{
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  ul.icons li{
+    list-style-type: none;
+  }
+  ul.icons li img{
+    height: 36px;
+    width: 36px;
+    margin-inline: 8px;
+  }
+  .footer-bottom{
+    background-color: #232347;
+    color: white;
+    font-family: 'Graphik-r';
+    position: relative;
+    top: -38px;
+    padding: 18px 24px;
+  }
+  .world{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .world b{
+    display: flex;
+    align-items: center;
+    padding: 9px 15px;
+    font-size: 13px;
+  }
+  .world b img{
+    height:18px;
+    width: 18px;
+    margin-right: 15px;
+  }
+  .world span{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .policy{
+    display: grid;
+    grid-template-columns: 36.4vw 20.4vw;
+    row-gap: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+  .policy a{
+    color: white;
+    font-size: 13px;
+  }
+  .policy a:nth-of-type(1){
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .etsy-icon img {
@@ -471,40 +673,94 @@ body {
   .discounts ul li a p {
     width: 205px;
   }
-  .popular-image{
+  .popular-image {
     height: 181px;
     width: 228px;
   }
-  .popular ul li a{
+  .popular ul li a {
     margin-top: 110px;
-    white-space:normal;
+    white-space: normal;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
-    
   }
-  .popular ul li{
+  .popular ul li {
     width: 33%;
     margin-bottom: 73px;
   }
-  video{
+  video {
     height: 181px;
     width: 228px;
-   border-radius: 10px;
-   object-fit: cover;
+    border-radius: 10px;
+    object-fit: cover;
   }
-  .like{
+  .like {
     left: 190px;
   }
-  .playbutton img{
+  .playbutton img {
     height: 34px;
     width: 34px;
   }
-  .playbutton{
+  .playbutton {
     top: 135px;
     left: 188px;
   }
-  
+  .shop{
+    display: contents;
+  }
+  .shop li{
+    font-size: 13px;
+    line-height: 2.5;
+  }
+  .shop.active{
+    display: none;
+  }
+  .fa-chevron-down{
+    display: none;
+  }
+  .findMore{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+  }
+  .download{
+    display: inline-flex;
+    align-items: center;
+    padding-inline: 5px;
+    margin: 0;
+  }
+  .download b{
+    width: 68%;
+  }
+  .etsy-app{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  position: relative;
+  top: -46px;
+}
+.container-footer{
+  padding-bottom: 0;
+}
+.icons{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-right: 33px;
+}
+.world span{
+  display: none;
+}
+.policy{
+  display: flex;
+}
+.policy a:nth-of-type(1){
+  display: flex;
+}
+.policy a{
+  font-size: 14px;
+  margin-inline-end: 20px;
+}
 }
 @media screen and (min-width: 1024px) {
   .bars {
@@ -583,68 +839,80 @@ body {
   .discounts ul li a p {
     width: 15px;
   }
-  .popular-image{
+  .popular-image {
     height: 139px;
     width: 176px;
   }
-  .popular h3{
+  .popular h3 {
     text-align: left;
     font-size: 24px;
     margin-left: 7.5px;
   }
-  .popular ul{
+  .popular ul {
     flex-wrap: nowrap;
     margin-inline: 13px;
   }
-  .popular ul li{
+  .popular ul li {
     margin-right: 27px;
   }
-  .popular ul li a{
+  .popular ul li a {
     width: 100%;
     margin-top: 49px;
   }
-  .popular ul li:nth-of-type(6){
+  .popular ul li:nth-of-type(6) {
     display: none;
   }
-  video{
+  video {
     height: 139px;
     width: 176px;
-   border-radius: 10px;
-   object-fit: cover;
+    border-radius: 10px;
+    object-fit: cover;
   }
-  .like{
+  .like {
     left: 142px;
   }
-  .playbutton{
+  .playbutton {
     top: 96px;
     left: 124px;
   }
-  .text-community{
+  .text-community {
     display: flex;
     flex-direction: row;
     padding: 34px 54px;
   }
-  .footer-top h2{
+  .footer-top h2 {
     font-size: 44px;
   }
   .footerCommunity h3,
   .creators h3,
-  .peaceOfMind h3{
-  text-align: left;
-  font-size: 28px;
-  width: 267px;
-  line-height: 1.5;
+  .peaceOfMind h3 {
+    text-align: left;
+    font-size: 28px;
+    width: 267px;
+    line-height: 1.5;
   }
-  .textFooter{
+  .textFooter {
     width: 277px;
     text-align: left;
   }
+  .renewwable{
+    top: -35px;
+  }
   .footerCommunity,
   .creators,
-  .peaceOfMind{
+  .peaceOfMind {
     margin-right: 39px;
   }
-
+  .download b{
+    width: 100%;
+  }
+  .etsy-app{
+    top: -20px;
+  }
+  .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 1440px) {
   .form-input {
@@ -709,29 +977,28 @@ body {
   .discounts ul li a p {
     width: 140px;
   }
-  .popular{
+  .popular {
     padding: 0 42px;
   }
-  .popular-image{
+  .popular-image {
     height: 199px;
     width: 251px;
-   
   }
-  .popular ul li{
+  .popular ul li {
     margin-right: 30px;
   }
-  .popular ul li a{
+  .popular ul li a {
     margin-top: 110px;
   }
-  video{
+  video {
     height: 199px;
     width: 251px;
-   border-radius: 10px;
+    border-radius: 10px;
   }
-  .like{
+  .like {
     left: 204px;
   }
-  .playbutton{
+  .playbutton {
     top: 139px;
     left: 190px;
   }
@@ -739,43 +1006,82 @@ body {
     max-width: 1470px;
     margin-inline: auto;
   }
-  .text-community{
+  .text-community {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 34px 54px;
   }
-  .footer-top h2{
+  .footer-top h2 {
     font-size: 44px;
   }
   .footerCommunity h3,
   .creators h3,
-  .peaceOfMind h3{
-  text-align: left;
-  font-size: 28px;
-  width: 267px;
-  line-height: 1.5;
+  .peaceOfMind h3 {
+    text-align: left;
+    font-size: 28px;
+    width: 267px;
+    line-height: 1.5;
   }
-  .textFooter{
+  .textFooter {
     width: 277px;
     text-align: left;
   }
   .footerCommunity,
   .creators,
-  .peaceOfMind{
+  .peaceOfMind {
     margin-right: 39px;
   }
-
-  
+  .form-email{
+    margin-bottom: 80px;
+  }
+  img.darkblue{
+    top: -60px;
+  }
+  .renewwable{
+    top: -70px;
+  }
+  .container-footer{
+    padding-left: 0;
+    top: -72px;
+  }
+  .etsy-app{
+    top: -86px;
+    right: 51px;
+  }
+  .download{
+    margin-right: 96px;
+  }
+  .findMore{
+    max-width: 1380px;
+    margin-inline: auto;
+  }
+  .footer-bottom{
+    top:-74px;
+  }
 }
 @media screen and (min-width: 1500px) {
-  .popular h3{
+  .popular h3 {
     max-width: 1370px;
     margin-inline: auto;
   }
-  .popular ul{
+  .popular ul {
     max-width: 1370px;
     margin-inline: auto;
   }
-  
+  .etsy-app{
+    max-width: 2040px;
+    margin-inline-end: auto;
+    right: 200px;
+  }
+ .world,
+ .policy{
+  max-width: 1370px;
+  margin-left: auto;
+ }
+ .policy{
+  max-width: 1470px;
+  margin-right: auto;
+ }
+ 
 }

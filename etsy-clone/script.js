@@ -1,8 +1,8 @@
 const container = document.querySelector(".container-list");
 const discounts = document.querySelector(".discounts");
-const popularGif = document.querySelector(".popular-gifts")
+const popularGif = document.querySelector(".popular-gifts");
 
-const halfStar = "img/half-star.svg"
+const halfStar = "img/half-star.svg";
 const content = [
   {
     name: "Wedding",
@@ -67,12 +67,12 @@ const popularGifts = [
     name: "Birth Flower Jewelry Travel Case, Birth Month Flower Gift, Personalized Birthday Gift, Leather Jewelry Travel Case, Custom Jewelry Case",
     photo: "img/0301.avif",
     starcount: 5,
-    rating: 'img/full-star.svg',
-    reviews: ' (9920)',
+    rating: "img/full-star.svg",
+    reviews: " (9920)",
     price: "",
     actualprice: 1710,
     discount: 50,
-    delivery:"",
+    delivery: "",
     type: "image",
     videoURL: "",
   },
@@ -81,12 +81,12 @@ const popularGifts = [
     name: "Heart Keychain Set - Made with Authentic LEGO® Bricks, Matching keychains, Gift Set for Couples, Best Friends - Very High Quality & DURABL",
     photo: "img/0302.avif",
     starcount: 5,
-    rating:'img/full-star.svg',
-    reviews: ' (13,357)',
+    rating: "img/full-star.svg",
+    reviews: " (13,357)",
     price: "",
     actualprice: 1452,
     discount: 50,
-    delivery:"",
+    delivery: "",
     type: "video",
     videoURL: "img/0302-vid.mp4",
   },
@@ -94,12 +94,12 @@ const popularGifts = [
     name: "Dainty Name Necklace with Birth Flower, Personalized Name Necklace, Custom Gold Name Jewelry, Birthday Gift for Her, Bridesmaid Gift",
     photo: "img/0303.avif",
     starcount: 5,
-    rating:'img/full-star.svg',
-    reviews: ' (13,952)',
+    rating: "img/full-star.svg",
+    reviews: " (13,952)",
     price: "",
     actualprice: 3293,
     discount: 50,
-    delivery:"FREE Delivery",
+    delivery: "FREE Delivery",
     type: "image",
     videoURL: "",
   },
@@ -107,12 +107,12 @@ const popularGifts = [
     name: "Personalised Song Plaque With Stand, Any Photo / Song, Any Playlist, Photo and Music Gift, Music Prints",
     photo: "img/0304.avif",
     starcount: 4,
-    rating:'img/full-star.svg',
-    reviews: ' (5466)',
+    rating: "img/full-star.svg",
+    reviews: " (5466)",
     price: "",
     actualprice: 2152,
     discount: 70,
-    delivery:"FREE Delivery",
+    delivery: "FREE Delivery",
     type: "video",
     videoURL: "img/0304-vid.mp4",
   },
@@ -120,12 +120,12 @@ const popularGifts = [
     name: "Handmade Damascus Pocket Knife Rose Wood Handle Birthday Gift Folding Knife Groomsmen Gift Anniversary Wedding Personalized Gift for Men",
     photo: "img/0305.avif",
     starcount: 5,
-    rating:'img/full-star.svg',
-    reviews: ' (6579)',
+    rating: "img/full-star.svg",
+    reviews: " (6579)",
     price: "",
     actualprice: 7703,
     discount: 70,
-    delivery:"",
+    delivery: "",
     type: "video",
     videoURL: "img/0305-vid.mp4",
   },
@@ -133,17 +133,16 @@ const popularGifts = [
     name: "Faceless Portrait, custom illustration, personalised photo, photo illustration, personalised portrait, boyfriend gift, girlfriend gift",
     photo: "img/0306.avif",
     starcount: 5,
-    rating:'img/full-star.svg',
+    rating: "img/full-star.svg",
     reviews: ` (7362)`,
     price: "",
     actualprice: 1541,
     discount: 70,
-    delivery:"FREE Delivery",
+    delivery: "FREE Delivery",
     type: "image",
     videoURL: "",
   },
 ];
-
 
 function addList() {
   const addContents = document.createElement("ul");
@@ -224,13 +223,13 @@ function popularList() {
           // video_popular.currentTime = 0;
           video_popular.load();
         });
-        const playButton=document.createElement("div")
-        popular_image.appendChild(playButton)
-        playButton.classList.add("playbutton")
-        
-        const playButtonImg=document.createElement('img')
-        playButton.appendChild(playButtonImg)
-        playButtonImg.src="img/play-button.svg"
+        const playButton = document.createElement("div");
+        popular_image.appendChild(playButton);
+        playButton.classList.add("playbutton");
+
+        const playButtonImg = document.createElement("img");
+        playButton.appendChild(playButtonImg);
+        playButtonImg.src = "img/play-button.svg";
         // console.log(video_popular)
       } else {
         const img_popular = document.createElement("img");
@@ -252,72 +251,93 @@ function popularList() {
     textList.appendChild(ratingStar);
     ratingStar.src = popularGifts[i].rating;
 
-
-    for (let j=0;j<popularGifts[i].starcount-1;j++){
-      if(popularGifts[i].starcount===5){
-
+    for (let j = 0; j < popularGifts[i].starcount - 1; j++) {
+      if (popularGifts[i].starcount === 5) {
         const ratingStar = document.createElement("img");
         textList.appendChild(ratingStar);
         ratingStar.src = popularGifts[i].rating;
-      } }
-      if(popularGifts[i].starcount===4){
-          for (let j=0;j<popularGifts[i].starcount-1;j++){
-  
-           const ratingStar = document.createElement("img");
-          textList.appendChild(ratingStar);
-          ratingStar.src = popularGifts[i].rating ;
-         
-        }
-        const ratingStarHalf = document.createElement("img");
-        textList.appendChild(ratingStarHalf);
-        ratingStarHalf.src = halfStar ; 
-       }
-        const ratingNum=document.createElement("span")
-        textList.appendChild(ratingNum)
-        ratingNum.innerText=popularGifts[i].reviews;
+      }
+    }
+    if (popularGifts[i].starcount === 4) {
+      for (let j = 0; j < popularGifts[i].starcount - 1; j++) {
+        const ratingStar = document.createElement("img");
+        textList.appendChild(ratingStar);
+        ratingStar.src = popularGifts[i].rating;
+      }
+      const ratingStarHalf = document.createElement("img");
+      textList.appendChild(ratingStarHalf);
+      ratingStarHalf.src = halfStar;
+    }
+    const ratingNum = document.createElement("span");
+    textList.appendChild(ratingNum);
+    ratingNum.innerText = popularGifts[i].reviews;
 
-        const pricesAll=document.createElement("p")
-        textList.appendChild(pricesAll)
+    const pricesAll = document.createElement("p");
+    textList.appendChild(pricesAll);
 
-        const priceAfter=document.createElement("b")
-        pricesAll.appendChild(priceAfter)
-        priceAfter.innerHTML="₹"+ " "+Math.ceil (`${popularGifts[i].price} ${(popularGifts[i].actualprice*popularGifts[i].discount/100)}`)
-       
-         const breakLine=document.createElement("br")
-         pricesAll.appendChild(breakLine)
+    const priceAfter = document.createElement("b");
+    pricesAll.appendChild(priceAfter);
+    priceAfter.innerHTML =
+      "₹" +
+      " " +
+      Math.ceil(
+        `${popularGifts[i].price} ${
+          (popularGifts[i].actualprice * popularGifts[i].discount) / 100
+        }`
+      );
 
-        const actualPrice=document.createElement("span")
-        pricesAll.appendChild(actualPrice)
-        actualPrice.innerHTML= "₹" +" "+ popularGifts[i].actualprice
+    const breakLine = document.createElement("br");
+    pricesAll.appendChild(breakLine);
 
-        const discountPercent=document.createElement("small")
-        pricesAll.appendChild(discountPercent)
-        discountPercent.innerHTML=" "+"(" +popularGifts[i].discount+"% off"+")"
+    const actualPrice = document.createElement("span");
+    pricesAll.appendChild(actualPrice);
+    actualPrice.innerHTML = "₹" + " " + popularGifts[i].actualprice;
 
-        const deliveryInfo=document.createElement("div")
-        popular_items.appendChild(deliveryInfo)
-        deliveryInfo.innerHTML=popularGifts[i].delivery
-        deliveryInfo.classList.add('deliveryInfo')
-        if(popularGifts[i].delivery===""){
-          deliveryInfo.style.display="none"
-        }
+    const discountPercent = document.createElement("small");
+    pricesAll.appendChild(discountPercent);
+    discountPercent.innerHTML =
+      " " + "(" + popularGifts[i].discount + "% off" + ")";
 
-        const favorites=document.createElement("div")
-        popular_image.appendChild(favorites)
-        favorites.classList.add("like")
-        
-        const likeButton=document.createElement('img')
-        favorites.appendChild(likeButton)
-        likeButton.src="img/whitelike.svg"
-        likeButton.addEventListener("click",(e)=>{
-          e.target.src="img/redlike.svg"
-         })
-        likeButton.addEventListener("dblclick",(e)=>{
-          e.target.src="img/whitelike.svg"
-        })   
+    const deliveryInfo = document.createElement("div");
+    popular_items.appendChild(deliveryInfo);
+    deliveryInfo.innerHTML = popularGifts[i].delivery;
+    deliveryInfo.classList.add("deliveryInfo");
+    if (popularGifts[i].delivery === "") {
+      deliveryInfo.style.display = "none";
+    }
+
+    const favorites = document.createElement("div");
+    popular_image.appendChild(favorites);
+    favorites.classList.add("like");
+
+    const likeButton = document.createElement("img");
+    favorites.appendChild(likeButton);
+    likeButton.src = "img/whitelike.svg";
+    likeButton.addEventListener("click", (e) => {
+      e.target.src = "img/redlike.svg";
+    });
+    likeButton.addEventListener("dblclick", (e) => {
+      e.target.src = "img/whitelike.svg";
+    });
   }
+
+
 }
 
 popularList();
 
+const shopHeading=document.querySelectorAll('.shop-heading')
+const shopList=document.querySelectorAll(".shop")
+shopHeading.forEach((toggle,idx)=>{
+  toggle.addEventListener("click",()=>{
+    shopList[idx].classList.toggle('active')
+   });
+})
+
+const chevronClass=document.querySelectorAll('.fa-chevron-down')
+shopHeading.forEach((toggle,idx)=>{
+  toggle.addEventListener("click",()=>{
+    chevronClass[idx].classList.toggle('active')
+   });
+})
 
