@@ -199,6 +199,10 @@ body {
     position: relative;
     top: 120px;
     padding: 0 12px;
+    padding-bottom: 60px;
+  }
+  .popular-gifts{
+    margin-bottom: 80px;
   }
   .popular h3 {
     text-align: center;
@@ -210,11 +214,13 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+   
   }
   .popular ul li {
     list-style-type: none;
     width: 50%;
-  }
+    margin-bottom: 10px;
+    }
   .popular ul li a {
     display: block;
     color: black;
@@ -227,17 +233,32 @@ body {
     overflow: hidden;
     width: 88%;
   }
+  .popular-div{
+    height: 113px;
+    margin-bottom: 18px;
+    position: relative;
+  }
   .popular-image {
     height: 113px;
     width: 142px;
     border-radius: 10px;
+    position: relative;
   }
-  .popular-video{
-    height: 113px;
+ video{
+    height: 116px;
     width: 142px;
-    border-radius: 10px;
+   border-radius: 10px;
+   object-fit: cover;
+   
   }
-  .popular ul li i{
+ 
+  .popular ul li:nth-of-type(2):hover video.popular-image{
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .popular ul li .rating{
     font-size: 12px;
     margin-bottom: 8px;
   }
@@ -250,7 +271,7 @@ body {
     margin: 0;
   }
   .popular ul li p b{
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Graphik-r';
   }
   .popular ul li p span{
@@ -264,6 +285,140 @@ body {
     font-size: 13px;
     font-family: 'Graphik-r';
   }
+  .deliveryInfo{
+      font-size: 11px;
+      background-color: #d4e9d7;
+      font-family: 'Graphik-m';
+      border-radius: 50px;
+      padding: 2px;
+      padding-inline: 14px;
+      display: inline;
+  }
+  .like{
+    position: absolute;
+    top:12px;
+    left: 110px;
+    opacity: 0;
+  }
+  .like img{
+    height: 20px;
+    width: 20px;
+    padding: 3px;
+    background-color: white;
+    border-radius: 50%;
+  }
+ .popular-div:hover .like{
+    opacity: 1;
+  }
+
+  .playbutton img{
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .playbutton{
+    position: absolute;
+    top:78px;
+    left: 100px;
+  }
+  .footer-top{
+    background-color: #fdebd2;
+    background-image: url(img/svgexport-17.svg);
+    background-repeat: no-repeat;
+    padding: 36px 30px;
+    padding-bottom: 0;
+  }
+  .footer-top img{
+    transform: translateY(10px);
+  }
+  .footer-top h2{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Graphik-l';
+    margin-bottom: 6px;
+    font-weight: 100;
+  }
+  .footer-top a{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    display: block;
+  }
+  .footerCommunity h3,
+  .creators h3,
+  .peaceOfMind h3{
+    font-weight: 600;
+    font-family: 'Graphik-r';
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .textFooter{
+    font-family: 'Graphik-r';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    width: 100%;
+  }
+  .textFooter span{
+   border-bottom: 2px dotted #000;
+   text-decoration: none;
+  }
+  .questions h4{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: 'Graphik-r';
+    line-height: 24px;
+
+  }
+  .questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .questions a{
+    /* background-image: url(img/svgexport-23.svg); */
+    font-size: 18px;
+    padding-block: 15px;
+    padding-inline: 12px;
+    margin: 12px 0 0;
+    margin-bottom: 12px;
+    font-family: 'Graphik-r';
+    font-weight: 700;
+    max-width: 190px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-inline: 30px;
+  }
+  .text-community{
+    display: flex;
+    flex-direction: column;
+  }
+  .offers{
+   background-color:#d7e6f5; 
+   padding: 18px 24px 24px;
+    }   
+  .offers-p{
+    margin-block: 0;
+    font-size: 16px;
+    margin: 0 0 12px;
+    text-align: center;
+    font-family: 'Graphik-m';
+    line-height: 1.4;
+  }
+  .email-p{
+    padding: 12px;
+    border-radius: 50px;
+  }
+  
 }
 @media screen and (min-width: 768px) {
   .etsy-icon img {
@@ -321,14 +476,35 @@ body {
     width: 228px;
   }
   .popular ul li a{
-    margin: 0;
+    margin-top: 110px;
     white-space:normal;
-    width: 58%;
-    justify-content: space-around;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    
   }
   .popular ul li{
     width: 33%;
+    margin-bottom: 73px;
   }
+  video{
+    height: 181px;
+    width: 228px;
+   border-radius: 10px;
+   object-fit: cover;
+  }
+  .like{
+    left: 190px;
+  }
+  .playbutton img{
+    height: 34px;
+    width: 34px;
+  }
+  .playbutton{
+    top: 135px;
+    left: 188px;
+  }
+  
 }
 @media screen and (min-width: 1024px) {
   .bars {
@@ -414,16 +590,59 @@ body {
   .popular h3{
     text-align: left;
     font-size: 24px;
+    margin-left: 7.5px;
   }
   .popular ul{
     flex-wrap: nowrap;
-    width: 60%;
+    margin-inline: 13px;
   }
   .popular ul li{
     margin-right: 27px;
   }
+  .popular ul li a{
+    width: 100%;
+    margin-top: 49px;
+  }
   .popular ul li:nth-of-type(6){
     display: none;
+  }
+  video{
+    height: 139px;
+    width: 176px;
+   border-radius: 10px;
+   object-fit: cover;
+  }
+  .like{
+    left: 142px;
+  }
+  .playbutton{
+    top: 96px;
+    left: 124px;
+  }
+  .text-community{
+    display: flex;
+    flex-direction: row;
+    padding: 34px 54px;
+  }
+  .footer-top h2{
+    font-size: 44px;
+  }
+  .footerCommunity h3,
+  .creators h3,
+  .peaceOfMind h3{
+  text-align: left;
+  font-size: 28px;
+  width: 267px;
+  line-height: 1.5;
+  }
+  .textFooter{
+    width: 277px;
+    text-align: left;
+  }
+  .footerCommunity,
+  .creators,
+  .peaceOfMind{
+    margin-right: 39px;
   }
 
 }
@@ -501,8 +720,62 @@ body {
   .popular ul li{
     margin-right: 30px;
   }
-  /* .popular ul{
+  .popular ul li a{
+    margin-top: 110px;
+  }
+  video{
+    height: 199px;
+    width: 251px;
+   border-radius: 10px;
+  }
+  .like{
+    left: 204px;
+  }
+  .playbutton{
+    top: 139px;
+    left: 190px;
+  }
+  .footer-texts {
     max-width: 1470px;
     margin-inline: auto;
-  } */
+  }
+  .text-community{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 34px 54px;
+  }
+  .footer-top h2{
+    font-size: 44px;
+  }
+  .footerCommunity h3,
+  .creators h3,
+  .peaceOfMind h3{
+  text-align: left;
+  font-size: 28px;
+  width: 267px;
+  line-height: 1.5;
+  }
+  .textFooter{
+    width: 277px;
+    text-align: left;
+  }
+  .footerCommunity,
+  .creators,
+  .peaceOfMind{
+    margin-right: 39px;
+  }
+
+  
+}
+@media screen and (min-width: 1500px) {
+  .popular h3{
+    max-width: 1370px;
+    margin-inline: auto;
+  }
+  .popular ul{
+    max-width: 1370px;
+    margin-inline: auto;
+  }
+  
 }
