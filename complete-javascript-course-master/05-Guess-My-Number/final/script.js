@@ -21,6 +21,8 @@ const displayMessage = function (message) {
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
+  //here the UI always prints the o/p as string so we change it to a number
+  //as later we need to compare this number with a random value
   console.log(guess, typeof guess);
 
   // When there is no input
@@ -41,7 +43,9 @@ document.querySelector('.check').addEventListener('click', function () {
       highscore = score;
       document.querySelector('.highscore').textContent = highscore;
     }
-
+  //refactoring
+  //resturcturing the code withou changing its functonality -following
+  //the DRY principle
     // When guess is wrong
   } else if (guess !== secretNumber) {
     if (score > 1) {
