@@ -57,8 +57,8 @@ function printStudents() {
 
 function addStudent(id, name) {
   let studentObject = {
-    "name": name,
-    "id": id,
+    name: name,
+    id: id,
   };
 
   classObj.students.push(studentObject);
@@ -83,26 +83,42 @@ function markChemistry() {
 }
 // markChemistry()
 
-function sumOfMarks(id) {
-  let sum = 0;
-  for (let i = 0; i < 5; i++) {
-  
-    sum = sum + classObj.students[id].marks[i].mark;
-  }
-  return sum;
-}
-// console.log(sumOfMarks(0));
-
-function changeTeacherName(){
-classObj.teacherName='Lissy';
-console.log(classObj);
+function changeTeacherName() {
+  classObj.teacherName = "Lissy";
+  console.log(classObj);
 }
 // changeTeacherName()
 
-function removeStudent(i,n){
-    classObj.students.splice(i,n)
-    console.log(classObj);
+function removeStudent(i, n) {
+  classObj.students.splice(i, n);
+  console.log(classObj);
 }
-removeStudent(2,1)
+// removeStudent(2,1)
+
+// function sumOfMarks(id) {
+//   let sum = 0;
+//   for (let i = 0; i < 5; i++) {
+
+//     sum = sum + classObj.students[id].marks[i].mark;
+//   }
+//   return sum;
+// }
+// console.log(sumOfMarks(0));
+
+// function markArray() {
+  
+//   classObj.students.forEach((n) => {
+//   let x=Object.entries(n.marks)
+//   let markOfEach=mark
+//   // let totalMark=0
+//   // let result=x.reduce(function(totalMark,mark){
+//   //   totalMark=totalMark+mark;
+//   // },0)
+
+//   console.log(markOfEach);
+//   });
+
+// }
+// markArray();
 
 
