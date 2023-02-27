@@ -89,11 +89,11 @@ function changeTeacherName() {
 }
 // changeTeacherName()
 
-function removeStudent(i, n) {
-  classObj.students.splice(i, n);
-  console.log(classObj);
+function removeStudent(i, n, students) {
+  students.splice(i, n);
+  return classObj;
 }
-// removeStudent(2,1)
+// console.log(removeStudent(2,1,classObj.students));
 
 // function sumOfMarks(id) {
 //   let sum = 0;
@@ -105,20 +105,32 @@ function removeStudent(i, n) {
 // }
 // console.log(sumOfMarks(0));
 
-// function markArray() {
-  
-//   classObj.students.forEach((n) => {
-//   let x=Object.entries(n.marks)
-//   let markOfEach=mark
-//   // let totalMark=0
-//   // let result=x.reduce(function(totalMark,mark){
-//   //   totalMark=totalMark+mark;
-//   // },0)
+function totalMarks(id, students) {
+  data = students.find((student) => {
+    return student.id === id;
+  });
+  total = 0;
+  data.marks.forEach((markObj) => {
+    total += markObj.mark;
+  });
+  console.log(total);
+}
+// totalMarks('102',classObj.students)
 
-//   console.log(markOfEach);
-//   });
-
+// function deleteStudent(id,students){
+//   data=students.find(student=>{
+//     return student.id===id;
+//   })
+//   delete data.id
+//   console.log(classObj);
 // }
-// markArray();
+// deleteStudent('101',classObj.students)
 
+function deleteSubject(id, students) {
+  data = students.find((student) => {
+    return student.id === id;
+  });
 
+  console.log(data.marks.splice(1, 4));
+}
+deleteSubject("103", classObj.students);
