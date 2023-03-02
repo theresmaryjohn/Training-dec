@@ -144,55 +144,81 @@ const popularGifts = [
   },
 ];
 
-function addList() {
-  const addContents = document.createElement("ul");
-  container.appendChild(addContents);
+// function addList() {
+//   const addContents = document.createElement("ul");
+//   container.appendChild(addContents);
 
-  for (let i = 0; i < content.length; i++) {
-    const list = document.createElement("li");
-    addContents.appendChild(list);
+//   for (let i = 0; i < content.length; i++) {
+//     const list = document.createElement("li");
+//     addContents.appendChild(list);
 
-    const listImage = document.createElement("img");
-    list.appendChild(listImage);
-    listImage.src = content[i].photo;
+//     const listImage = document.createElement("img");
+//     list.appendChild(listImage);
+//     listImage.src = content[i].photo;
 
-    const listName = document.createElement("a");
-    list.appendChild(listName);
-    listName.innerHTML = content[i].name;
-  }
-}
+//     const listName = document.createElement("a");
+//     list.appendChild(listName);
+//     listName.innerHTML = content[i].name;
+//   }
+// }
 
-addList();
+// addList();
 
-function discountList() {
-  for (let i = 0; i < discountItems.length; i++) {
-    const discount_list = document.createElement("ul");
-    discounts.appendChild(discount_list);
+// function discountList() {
+//   for (let i = 0; i < discountItems.length; i++) {
+//     const discount_list = document.createElement("ul");
+//     discounts.appendChild(discount_list);
 
-    const list_items = document.createElement("li");
-    discount_list.appendChild(list_items);
+//     const list_items = document.createElement("li");
+//     discount_list.appendChild(list_items);
 
-    const list_image = document.createElement("div");
-    list_items.appendChild(list_image);
+//     const list_image = document.createElement("div");
+//     list_items.appendChild(list_image);
 
-    const img_items = document.createElement("img");
-    list_image.appendChild(img_items);
-    img_items.src = discountItems[i].photo;
+//     const img_items = document.createElement("img");
+//     list_image.appendChild(img_items);
+//     img_items.src = discountItems[i].photo;
 
-    const discount_text = document.createElement("a");
-    list_items.appendChild(discount_text);
+//     const discount_text = document.createElement("a");
+//     list_items.appendChild(discount_text);
 
-    const discount_text_small = document.createElement("small");
-    discount_text.appendChild(discount_text_small);
-    discount_text_small.innerHTML = discountItems[i].name;
+//     const discount_text_small = document.createElement("small");
+//     discount_text.appendChild(discount_text_small);
+//     discount_text_small.innerHTML = discountItems[i].name;
 
-    const discount_text_p = document.createElement("p");
-    discount_text.appendChild(discount_text_p);
-    discount_text_p.innerHTML = discountItems[i].text;
-  }
-}
+//     const discount_text_p = document.createElement("p");
+//     discount_text.appendChild(discount_text_p);
+//     discount_text_p.innerHTML = discountItems[i].text;
+//   }
+// }
 
-discountList();
+// discountList();
+const containerlistul=document.querySelector('.containerlistul')
+
+let containerlist=content.map(function(item){
+  const html= `
+  <li>
+  <img src='${item.photo}'>
+  <a>${item.name}</a></li>
+  `;
+  return html;
+})
+console.log(containerlist.join(''));
+containerlistul.innerHTML=containerlist.join('')
+ 
+let dealsofday=discountItems.map(function(item){
+    const html= `
+    <ul><li><div>
+    <img src='${item.photo} '></div>
+    <a><small>${item.name}</small>
+    <p>${item.text}</p></a></li></ul>
+    `;
+    return html;
+  })
+  console.log(dealsofday.join(''));
+  discounts.innerHTML=dealsofday.join('')
+ 
+
 
 function popularList() {
   const popular_list = document.createElement("ul");
