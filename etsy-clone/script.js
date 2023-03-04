@@ -205,6 +205,7 @@ let containerlist=content.map(function(item){
 })
 console.log(containerlist.join(''));
 containerlistul.innerHTML=containerlist.join('')
+
  
 let dealsofday=discountItems.map(function(item){
     const html= `

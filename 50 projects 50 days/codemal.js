@@ -921,6 +921,8 @@ main()
 //it is overwritten
 //to solve this problem we use
 //immediate invokation or self invokation -syntax is different
+//this also has a problem that on writing two blocks of codes 
+//it is difficult to pass data between functions and calling functions is also difficult 
  
 (function(){
   var button=document.getElementById('hello')
@@ -932,3 +934,25 @@ main()
 })();
 
 //IMPORT/EXPORT
+
+//to resolve this problem import/export concept was introduced
+//if in a html file 3 js files are added then js access this as a single file
+//if we can seperate this as modules then the problem can be solved
+//so in script tag we can say that the type='module'
+//this creates a problem that the js files can't access the values
+//in other script files this and code won't work so 
+//import/export keywords were introduced
+
+//VAR,LET,CONST
+
+//var a=10 is the declaration same as window.a=10
+//this can cause problems sometimes that window.location parameter shows the location
+//of the page where we are at if we write var location='hello'-this corrupts the window's object
+//var will get hoisted
+//var allows multiple declarations inside a scope
+//function scope
+
+//whereas when we assign tthe location in let it will show an error that th ewindow's already has it
+//let won't be hoisted
+//only one declaration in a scope
+//block scope
