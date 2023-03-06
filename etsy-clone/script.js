@@ -193,33 +193,30 @@ const popularGifts = [
 // }
 
 // discountList();
-const containerlistul=document.querySelector('.containerlistul')
+const containerlistul = document.querySelector(".containerlistul");
 
-let containerlist=content.map(function(item){
-  const html= `
+let containerlist = content.map(function (item) {
+  const html = `
   <li>
   <img src='${item.photo}'>
   <a>${item.name}</a></li>
   `;
   return html;
-})
-console.log(containerlist.join(''));
-containerlistul.innerHTML=containerlist.join('')
+});
+console.log(containerlist.join(""));
+containerlistul.innerHTML = containerlist.join("");
 
- 
-let dealsofday=discountItems.map(function(item){
-    const html= `
+let dealsofday = discountItems.map(function (item) {
+  const html = `
     <ul><li><div>
     <img src='${item.photo} '></div>
     <a><small>${item.name}</small>
     <p>${item.text}</p></a></li></ul>
     `;
-    return html;
-  })
-  console.log(dealsofday.join(''));
-  discounts.innerHTML=dealsofday.join('')
- 
-
+  return html;
+});
+console.log(dealsofday.join(""));
+discounts.innerHTML = dealsofday.join("");
 
 function popularList() {
   const popular_list = document.createElement("ul");
@@ -347,24 +344,21 @@ function popularList() {
       e.target.src = "img/whitelike.svg";
     });
   }
-
-
 }
 
 popularList();
 
-const shopHeading=document.querySelectorAll('.shop-heading')
-const shopList=document.querySelectorAll(".shop")
-shopHeading.forEach((toggle,idx)=>{
-  toggle.addEventListener("click",()=>{
-    shopList[idx].classList.toggle('active')
-   });
-})
+const shopHeading = document.querySelectorAll(".shop-heading");
+const shopList = document.querySelectorAll(".shop");
+shopHeading.forEach((toggle, idx) => {
+  toggle.addEventListener("click", () => {
+    shopList[idx].classList.toggle("active");
+  });
+});
 
-const chevronClass=document.querySelectorAll('.fa-chevron-down')
-shopHeading.forEach((toggle,idx)=>{
-  toggle.addEventListener("click",()=>{
-    chevronClass[idx].classList.toggle('active')
-   });
-})
-
+const chevronClass = document.querySelectorAll(".fa-chevron-down");
+shopHeading.forEach((toggle, idx) => {
+  toggle.addEventListener("click", () => {
+    chevronClass[idx].classList.toggle("active");
+  });
+});
